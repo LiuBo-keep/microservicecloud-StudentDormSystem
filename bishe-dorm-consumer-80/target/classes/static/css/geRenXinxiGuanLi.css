@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.aa span {
+    font-family: 'Microsoft YaHei', 'SF Pro Display', Roboto, Noto, Arial, 'PingFang SC', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    list-style: none;
+}
+
+.aa {
+    width: 1000px;
+    height: 520px;
+    float: left;
+    background-color: white;
+   /* position: relative;
+    top: 7px;
+    left: 72px;*/
+}
+
+.right_cont {
+    width: 936px;
+    height: 463px;
+    position: relative;
+    left: 34px;
+}
+
+.title {
+    width: 936px;
+    height: 90px;
+    line-height: 90px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.user_info {
+    width: 936px;
+    height: 373px;
+}
+
+.header {
+    width: 100px;
+    height: 144px;
+}
+
+.head {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 16px auto 0;
+}
+
+.modify {
+    font-size: 14px;
+    color: #3399ea;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.right_c {
+    width: 820px;
+    height: 373px;
+    position: relative;
+    top: -38px;
+    left: 115px;
+}
+
+.right_info {
+    width: 820px;
+    height: 23px;
+    line-height: 20px;
+    position: relative;
+    top: 20px;
+}
+
+.id_name {
+    width: 118.65px;
+    height: 20px;
+    color: #999999;
+    margin: 3px 16px 0px 0px;
+}
+
+.user_home {
+    float: right;
+    font-size: 14px;
+    color: #3399ea;
+    padding-right: 9.3px;
+    margin-top: 3px;
+}
+
+.csdn_info {
+    width: 820px;
+    height: 19.2px;
+    position: relative;
+    top: 39px;
+}
+
+.splits {
+    color: #ccc;
+    margin-right: 16px;
+}
+
+.line {
+    height: 1px;
+    background: #e0e0e0;
+    position: relative;
+    top: 67px;
+}
+
+.nick {
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
+    position: relative;
+    top: 67px;
+}
+
+.mod {
+    float: right;
+    font-size: 14px;
+    color: #3399ea;
+    cursor: pointer;
+}
+
+.self {
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    color: #4d4d4d;
+    position: relative;
+    top: 81px;
+}
+
+.noWid{
+    width: 42px;
+    height: 16.8px;
+}
+
+.cont{
+    width: 770.8px;
+    height: 16.8px;
+}
+
+.selfName{
+    float: left;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}

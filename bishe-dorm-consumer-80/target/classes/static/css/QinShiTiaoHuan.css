@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.tiaohuan {
+    width: 1000px;
+    height: 520px;
+    float: left;
+    background-color: white;
+    position: relative;
+    top: 7px;
+    left: 72px;
+}
+
+.tiaohuan-top {
+    width: 1000px;
+    height: 28px;
+    border-bottom: 1px solid #b2bec3;
+    border-collapse: collapse;
+}
+
+.tiaohuan-top h3 {
+    color: #4d4d4d;
+    position: relative;
+    top: -7px;
+    left: 20px;
+}
+
+.tiaohuan-main {
+    width: 490px;
+    height: 192px;
+    position: relative;
+    top: 113px;
+    left: 217px;
+}
+
+.tiaohuan-main form {
+    position: relative;
+    top: 70px;
+    left: 120px;
+}
+
+.tiaohuan-main input {
+    width: 211px;
+    height: 30px;
+}
+
+.tiaohuan-main .queding {
+    width: 81px;
+    position: relative;
+    top: 45px;
+    left: -160px;
+}
+
+.tiaohuan-main span {
+    font-size: 17px;
+    font-family: monospace;
+    font-weight: 800;
+}
+
+.tiaohuan-main i {
+    color: red;
+    position: relative;
+    top: 5px;
+}
+
+.tiaohuan p {
+    color: red;
+    position: relative;
+    top: 9px;
+    left: 216px;
+}
+
+.tiaohuan-nei {
+    width: 460px;
+    height: 392px;
+    position: relative;
+    top: 20px;
+    left: 245px;
+}
+
+.tiaohuan-nei table {
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    font-family: 宋体;
+    font-size: 18px;
+    position: relative;
+    top: 9px;
+    left: -1px;
+}

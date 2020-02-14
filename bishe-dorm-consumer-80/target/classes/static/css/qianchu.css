@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.qianchu {
+    width: 1000px;
+    height: 520px;
+    float: left;
+    background-color: white;
+    position: relative;
+    top: 7px;
+    left: 72px;
+}
+
+.qianchu-top {
+    width: 1000px;
+    height: 28px;
+    border-bottom: 1px solid #b2bec3;
+    border-collapse: collapse;
+}
+
+.qianchu-top h3 {
+    color: #4d4d4d;
+    position: relative;
+    top: -7px;
+    left: 20px;
+}
+
+.qianchu-main {
+    width: 490px;
+    height: 192px;
+    position: relative;
+    top: 113px;
+    left: 217px;
+}
+
+.qianchu-main form {
+    position: relative;
+    top: 70px;
+    left: 120px;
+}
+
+.qianchu-main input {
+    width: 211px;
+    height: 30px;
+}
+
+.qianchu-main .queding {
+    width: 81px;
+    position: relative;
+    top: 45px;
+    left: -160px;
+}
+
+.qianchu-main span {
+    font-size: 17px;
+    font-family: monospace;
+    font-weight: 800;
+}
+
+.qianchu-main i {
+    color: red;
+    position: relative;
+    top: 5px;
+}
+
+.qianchu p {
+    color: red;
+    position: relative;
+    top: 9px;
+    left: 216px;
+}
+
+.qianchu-nei {
+    width: 460px;
+    height: 392px;
+    position: relative;
+    top: 20px;
+    left: 245px;
+}
+
+.qianchu-nei table {
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    font-family: 宋体;
+    font-size: 18px;
+    position: relative;
+    top: 9px;
+    left: -1px;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hp.bishe.dao.WeiXiuDao">
+
+    <insert id="shang" parameterType="com.hp.bishe.bean.WeiXiu">
+        insert into weixiu (sn,addre,obj,phone,status,create_time,cost)
+        values (#{sn},#{addre},#{obj},#{phone},#{status},#{time},#{cost})
+    </insert>
+
+    <select id="get" parameterType="String" resultType="com.hp.bishe.bean.WeiXiu">
+        select * from weixiu where sn=#{sn}
+    </select>
+</mapper>

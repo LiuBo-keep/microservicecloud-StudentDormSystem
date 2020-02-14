@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>AdminLTE 2 | Starter</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+    <link rel="stylesheet" href="../static/bootstrop/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../static/bootstrop/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../static/bootstrop/Ionicons/css/ionicons.min.css"/>
+    <link rel="stylesheet" href="../static/bootstrop/dist/css/AdminLTE.min.css"/>
+    <link rel="stylesheet" href="../static/bootstrop/dist/css/skins/skin-blue.min.css"/>
+    <link rel="stylesheet" href="../static/css/mequeqin.css"/>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic"/>
+
+    <style>
+        .form-paw {
+            width: 473px;
+            height: 497px;
+            z-index: 666677;
+            border: 1px solid gray;
+            background-color: white;
+            position: absolute;
+            top: 52px;
+            left: 646px;
+        }
+
+        .form-top {
+            height: 50px;
+            border-bottom: 1px solid #ced6e0;
+            background-color: #f1f2f6;
+        }
+
+        .form-top span {
+            font-size: large;
+            font-family: cursive;
+            position: relative;
+            top: 13px;
+            left: 22px;
+        }
+
+        .form-top p {
+            color: blueviolet;
+            font-size: larger;
+            cursor: pointer;
+            position: relative;
+            top: -12px;
+            left: 444px;
+        }
+
+        .form-main {
+            width: 320px;
+        }
+
+        .form-control {
+            margin: 12px;
+            position: relative;
+            top: 57px;
+            display: block;
+            left: 115px;
+            width: 100%;
+            height: 34px;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+            -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        }
+
+        .one {
+            font-family: cursive;
+            font-weight: 800;
+            color: dimgrey;
+            position: relative;
+            top: 76px;
+            left: -243px;
+        }
+
+        .btna {
+            position: relative;
+            top: 71px;
+            left: 39px;
+        }
+
+        .back {
+            width: 100%;
+            float: left;
+            background-color: white;
+        }
+
+        .bacl {
+            width: 100%;
+            height: 721px;
+            z-index: 666666;
+            background: rgba(0,0,0,.6);
+            position: absolute;
+        }
+        /*上传头像*/
+        .avatar {
+            width: 685px;
+            height: 314px;
+            z-index: 666678;
+            background-color: white;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 143px;
+            left: 454px;
+        }
+        .avatar-h3 {
+            color: #3d3d3d;
+            font-size: 16px;
+            font-weight: 700;
+            position: relative;
+            top: -4px;
+            left: 19px;
+        }
+        .avatar-i {
+            color: rgba(0, 0, 0, 0.5);
+            font-size: larger;
+            font-weight: 600;
+            cursor: pointer;
+            position: relative;
+            top: -35px;
+            left: 634px;
+        }
+        .avatar-main {
+            width: 635px;
+            height: 170px;
+            border: 1px solid;
+            border-color: rgba(0, 0, 0, .1);
+            background-color: rgba(0, 0, 0, .05);
+            position: relative;
+            top: -17px;
+            left: 25px;
+        }
+        .avatar-p {
+            font-size: 15px;
+            font-size: 17px;
+            font-weight: 600;
+            color: #999;
+            position: relative;
+            top: -16px;
+            left: 25px;
+        }
+        .avatar-input {
+            position: relative;
+            top: 64px;
+            left: 229px;
+        }
+        .avatar button{
+            position: relative;
+            top: -11px;
+            left: 588px;
+        }
+        .aaaaa{
+            position: relative;
+            top: -13px;
+            left: 582px;
+        }
+        .user-panel>.image>img {
+            width: 100%;
+            max-width: 45px;
+            height: 43px;
+        }
+        .ind {
+            width: 1278px;
+            height: 591px;
+            float: left;
+            background: url("../static/pic/3.jpg") no-repeat center top;
+            background-size: 1278px 591px;
+        }
+        .ind span {
+            color: yellow;
+            font-weight: 600;
+            font-size: 65px;
+            font-family: cursive;
+            position: relative;
+            top: 214px;
+            left: 373px;
+        }
+        .teo{
+            width: 1278px;
+            height: 591px;
+            float: left;
+            background: url("../static/pic/4.jpg") no-repeat center top;
+            background-size: 1278px 591px;
+        }
+        .teo span{
+            color: blue;
+            font-weight: 600;
+            font-size: 65px;
+            font-family: cursive;
+            position: relative;
+            top: 214px;
+            left: 373px;
+        }
+        table {
+            text-align: center;
+            position: relative;
+            top: 82px;
+            left: 306px;
+        }
+
+        .page {
+            height: 60px;
+            width: 1000px;
+            /* text-align: center; */
+            /*border: 1px solid;*/
+            position: absolute;
+            top: 451px;
+            left: -3px;
+        }
+
+        .page-l {
+            font-size: large;
+            font-family: cursive;
+            font-weight: 800;
+            position: relative;
+            top: 20px;
+            left: 29px;
+        }
+
+        .page-r {
+            float: left;
+            /* border: 1px solid blue; */
+            position: relative;
+            top: 14px;
+            left: 461px;
+        }
+
+        .page-ul{
+            float: left;
+            /* border: 1px solid red; */
+        }
+
+        .page-ul li{
+            width: 30px;
+            height: 30px;
+            margin: 2px;
+            color: #ccc;
+            text-align: center;
+            line-height: 30px;
+            border: 1px solid;
+            list-style-type: none;
+            float: left;
+        }
+
+        .page-ul li:hover{
+            color: #7ed6df;
+        }
+    </style>
+
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<!--背景-->
+<div class="bacl hidden" id="foot"></div>
+<!--修改密码-->
+<div class="wrapper">
+    <div class="back hide" id="eyea">
+        <div class="form-paw">
+            <div class="form-top">
+                <span>修改密码</span>
+                <p onclick="md()">x</p>
+            </div>
+            <div class="form-main">
+                <form id="form" method="post" class="form-horizontal">
+                    <div class="form-group">
+                        <span class="one">原始密码</span>
+                        <div class="col-sm-10">
+                            <input type="text" name="oldPassword" class="form-control" id="inputPassword3"
+                                   placeholder="Password"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <span class="one">新密码</span>
+                        <div class="col-sm-10">
+                            <input type="text" name="newPassword1" class="form-control" id="inputPassword3"
+                                   placeholder="Password"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <span class="one">确认密码</span>
+                        <div class="col-sm-10">
+                            <input type="text" name="newPassword2" class="form-control" id="inputPassword3"
+                                   placeholder="Password"/>
+                        </div>
+                    </div>
+                    <div class="btna">
+                        <!--<button type="submit" class="btn btn-default" onclick="md()">提交</button>-->
+                        <input id="subBtn" onclick="xiu()" type="button" class="btn btn-default"
+                               value="&nbsp;提&nbsp;&nbsp;&nbsp;&nbsp;交&nbsp;"/>
+                        <span  id="err" style="width: 60px;height: 30px;color:red;position: relative;left: 20px"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--上传头像-->
+    <div class="avatar hide" id="eyeb">
+        <form id="photoform" method="post" enctype="multipart/form-data">
+            <h3 class="avatar-h3">上传头像</h3>
+            <i class="avatar-i" onclick="shang()">x</i>
+            <div class="avatar-main">
+                <input type="file" name="photo" id="changehead" multiple="multiple" class="avatar-input"/>
+            </div>
+            <p class="avatar-p">图片宽度*高度至少为150*150像素，大小不超过2MB</p>
+            <div class="aaaaa">
+                <input id = "input_file" class="btn btn-default" onclick="pho()" type="button" value="提&nbsp;&nbsp;交"/>
+            </div>
+        </form>
+    </div>
+
+    <!--主页-->
+    <header class="main-header">
+        <a href="#" class="logo">
+            <span class="logo-mini"><b>A</b>LT</span>
+            <span class="logo-lg"><b>Dorm</b>System</span>
+        </a>
+        <nav class="navbar navbar-static-top" role="navigation">
+            <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <span class="sr-only">Toggle navigation</span>
+            </a>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown messages-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="label label-success">4</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">You have 4 messages</li>
+                            <li>
+                                <ul class="menu">
+                                    <li>
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img src="#" class="img-circle"
+                                                     alt="#"/>
+                                            </div>
+                                            <h4>
+                                                Support Team
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h4>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer"><a href="#">See All Messages</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown notifications-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-bell-o"></i>
+                            <span class="label label-warning">10</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">You have 10 notifications</li>
+                            <li>
+                                <ul class="menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer"><a href="#">View all</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown tasks-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-flag-o"></i>
+                            <span class="label label-danger">9</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">You have 9 tasks</li>
+                            <li>
+                                <ul class="menu">
+                                    <li>
+                                        <a href="#">
+                                            <h3>
+                                                Design some buttons
+                                                <small class="pull-right">20%</small>
+                                            </h3>
+                                            <div class="progress xs">
+                                                <div class="progress-bar progress-bar-aqua" style="width: 20%"
+                                                     role="progressbar"
+                                                     aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                    <span class="sr-only">20% Complete</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer">
+                                <a href="#">View all tasks</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown user user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <div class="hidden-xs" th:text="${session.user.username}"></div>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="user-header">
+                                <img id="photoImg1" th:src="${session.phone}" class="img-circle" alt="User Image"/>
+
+                                <p>
+                                    <span th:text="${session.Student.remark}"></span>
+                                    <small>Member since Nov. 2012</small>
+                                </p>
+                            </li>
+                            <li class="user-body">
+                                <div class="row">
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#" onclick="mian()">修改密码</a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#" onclick="avatar()">上传头像</a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#">个性签名</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="user-footer">
+                                <div class="pull-right">
+                                    <a href="/dorm" class="btn btn-default btn-flat">退出</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside class="main-sidebar">
+
+        <section class="sidebar">
+
+            <div class="user-panel">
+                <div class="pull-left image">
+                    <img id="photoImg2" th:src="${session.phone}" class="img-circle" alt="User Image"/>
+                </div>
+                <div class="pull-left info">
+                    <p th:text="${session.user.username}"></p>
+                    <div th:if="${session.Type==0}" th:text="${session.user.sn}"></div>
+                </div>
+            </div>
+
+            <ul class="sidebar-menu" data-widget="tree">
+                <li class="header">HEADER</li>
+                <!-- 主页 -->
+                <!--<li class="treeview">-->
+                <li>
+                    <a th:href="@{/index}"><i class="glyphicon glyphicon-home"></i> <span>主页</span>
+                    </a>
+                </li>
+                <li th:if="${session.Type}==1">
+                    <a th:href="@{/xueShengGuanLi}"><i class="glyphicon glyphicon-user"></i> <span>学生管理</span>
+                    </a>
+                </li>
+                <li th:if="${session.Type}==1">
+                    <a th:href="@{/suSheGuanLi}"><i class="glyphicon glyphicon-edit"></i> <span>宿舍管理</span>
+                    </a>
+                </li>
+                <li th:if="${session.Type}==1">
+                    <a th:href="@{/XueShengRuzhuDengJi}"><i class="glyphicon glyphicon-edit"></i> <span>学生入住登记</span>
+                    </a>
+                </li>
+                <li th:if="${session.Type}==1">
+                    <a th:href="@{/xueShengQinShiTiaoHuan}"><i class="glyphicon glyphicon-oil"></i> <span>学生寝室调换</span>
+                    </a>
+                </li>
+                <li th:if="${session.Type}==1">
+                    <a th:href="@{/xueShengQianChu}"><i class="glyphicon glyphicon-send"></i> <span>学生迁出登记</span>
+                    </a>
+                </li>
+                <li th:if="${session.Type}==1">
+                    <a th:href="@{/qianChuJiLu}"><i class="glyphicon glyphicon-calendar"></i> <span>迁出记录</span>
+                    </a>
+                </li>
+                <li th:if="${session.Type}==1">
+                    <a th:href="@{/Queqin}"><i class="glyphicon glyphicon-align-center"></i> <span>缺勤记录</span>
+                    </a>
+                </li>
+                <!--<li th:if="${session.Type}==0" class="treeview">-->
+                <li th:if="${session.Type}==0">
+                    <a th:href="@{/gerenxinxiguanli}"><i class="glyphicon glyphicon-user"></i> <span>个人信息管理</span>
+                    </a>
+                </li>
+                <li th:if="${session.Type}==0">
+                    <a th:href="@{/ruZhuXinXiDengJi}"><i class="glyphicon glyphicon-bookmark"></i> <span>入住信息登记</span>
+                    </a>
+                </li>
+                <li th:if="${session.Type}==0">
+                    <a th:href="@{/queQinJiLu}"><i class="glyphicon glyphicon-calendar"></i> <span>我的缺勤记录</span>
+                    </a>
+                </li>
+                <li th:if="${session.Type}==0">
+                    <a th:href="@{/weiXiuXinXi}"><i class="glyphicon glyphicon-file"></i> <span>上报维修信息</span>
+                    </a>
+                </li>
+                <li th:if="${session.Type}==0">
+                    <a th:href="@{/weiXiuJiLu}"><i class="glyphicon glyphicon-tag"></i> <span>我的维修记录</span>
+                    </a>
+                </li>
+                <li th:if="${session.Type}==0">
+                    <a th:href="@{/jianYiPingJia}"><i class="glyphicon glyphicon-comment"></i> <span>建议评价</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </aside>
+
+    <div class="content-wrapper">
+        <section class="content-header">
+            <div class="mequeqin" style="position: relative;top: 7px;left: 72px">
+                <div class="mequeqin-top">
+                    <h3>我的缺勤记录</h3>
+                </div>
+                <div class="mequeqin-data">
+                    <form id="mequeqinform" name="post">
+                        <span>起始时间：</span>
+                        <input type="date" name="start"/>
+                        &nbsp;
+                        <span>结束时间：</span>
+                        <input type="date" name="stop"/>
+                        <input id="mequeqin" type="button" value="搜索"/>
+                    </form>
+                </div>
+                <div class="mequeqin-main">
+                    <form>
+                        <table id="queqintable" border="1" cellspacing="0">
+
+                        </table>
+                    </form>
+                    <!-- 分页结构 -->
+                    <div class="page">
+                        <div class="page-l" id="page_l" style="float: left;">
+                            <span>总共 <span id="total_count"></span> 条</span>
+                        </div>
+                        <div class="page-r">
+                            <ul id="page_ul" class="page-ul">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content container-fluid">
+
+
+        </section>
+    </div>
+
+
+    <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+            xxxx大学
+        </div>
+        <strong>Copyright &copy; 2020 <a href="#">Company</a>.</strong> STUDENT DORM SYSTEM @ LiuBo
+    </footer>
+
+    <aside class="control-sidebar control-sidebar-dark">
+        <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+            <li class="active"><a href="#" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+            <li><a href="#" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="control-sidebar-home-tab">
+                <h3 class="control-sidebar-heading">Recent Activity</h3>
+                <ul class="control-sidebar-menu">
+                    <li>
+                        <a href="#">
+                            <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+                            <div class="menu-info">
+                                <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+
+                                <p>Will be 23 on April 24th</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+                <h3 class="control-sidebar-heading">Tasks Progress</h3>
+                <ul class="control-sidebar-menu">
+                    <li>
+                        <a href="#">
+                            <h4 class="control-sidebar-subheading">
+                                Custom Template Design
+                                <span class="pull-right-container">
+                    <span class="label label-danger pull-right">70%</span>
+                  </span>
+                            </h4>
+
+                            <div class="progress progress-xxs">
+                                <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+            <div class="tab-pane" id="control-sidebar-settings-tab">
+                <form method="post">
+                    <h3 class="control-sidebar-heading">General Settings</h3>
+
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            Report panel usage
+                            <input type="checkbox" class="pull-right" checked="checked"/>
+                        </label>
+
+                        <p>
+                            Some information about this general settings option
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </aside>
+    <div class="control-sidebar-bg"></div>
+</div>
+<script src="../static/jquery/jquery-1.11.1.min.js"></script>
+<script src="../static/js/queqinjilu.js"></script>
+<script src="../static/bootstrop/js/bootstrap.js"></script>
+<script src="../static/bootstrop/js/adminlte.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="../static/bootstrop/css/bootstrap.min.css"/>
+    <script src="../static/jquery/jquery-1.11.1.js"></script>
+    <script src="../static/js/login.js"></script>
+    <title>登录</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .hand {
+            width: 724px;
+            height: 114px;
+            position: relative;
+            top: 48px;
+            left: 447px;
+        }
+        .black{
+            width: 100%;
+            height: 655px;
+            background-image: url(../static/pic/0.jpg);
+            position: absolute
+        }
+        .login {
+            width: 300px;
+            height: 396px;
+            border: 1px solid rgba(86,61,124,.15);
+            background-color: rgba(86,61,124,.15);
+            position: relative;
+            top: 64px;
+            left: 15px;
+        }
+        img{
+            width: 105px;
+            height: 38px;
+            position: relative;
+            left: 26px;
+            top: 10px;
+        }
+        .vcode{
+            width: 129px;
+            height: 38px;
+            position: relative;
+            left: 4px;
+            top: 10px;
+        }
+        .form-group{
+            margin-top: 22px;
+        }
+        .btn-group-lg>.btn, .btn-lg {
+            padding: 5px 42px;
+            font-size: 18px;
+            line-height: 1.3333333;
+            border-radius: 6px;
+            position: relative;
+            top: -5px;
+            left: 53px;
+        }
+        .checkbox label, .radio label {
+            min-height: 20px;
+            padding-left: 20px;
+            margin-bottom: 0;
+            font-weight: 400;
+            cursor: pointer;
+            position: relative;
+            top: 12px;
+            left: 10px;
+        }
+        .text{
+            color: #888888;
+        }
+        .sp {
+            font-size: 92px;
+            color: rgba(68, 73, 83, 0.911);
+            padding: 66px;
+            position: relative;
+            left: -88px;
+        }
+        .radio-right {
+            position: relative;
+            left: 48px;
+            color: white;
+        }
+        .radio-left {
+            position: relative;
+            right: -146px;
+            top: -26px;
+            color: white;
+        }
+        .footer {
+            width: 314px;
+            color: darkgrey;
+            position: relative;
+            top: 124px;
+            left: 564px;
+        }
+    </style>
+</head>
+<body>
+<div class="black">
+    <div class="hand">
+        <span class="sp">宿舍管理系统</span>
+    </div>
+    <div class="login container">
+        <form id="form" method="post">
+            <div class="form-group">
+                <label for="exampleInputEmail1">账号</label>
+                <input type="text" name="username" class="form-control" id="exampleInputEmail1" placeholder="账号"/>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">密码</label>
+                <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="密码"/>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"/> <p class="text">记住我</p>
+                </label>
+            </div>
+            <div>
+                <div class="radio-right">
+                    <input type="radio" name="type"  value="0" />
+                    <label>学生</label>
+                </div>
+                <div class="radio-left">
+                    <input type="radio" name="type"  value="1" />
+                    <label>管理员</label>
+                </div>
+            </div>
+            <input id="submitBtn" type="button" class="btn btn-lg btn-primary" value="&nbsp;登&nbsp;&nbsp;&nbsp;&nbsp;录&nbsp;"/>
+        </form>
+    </div>
+    <div class="footer">Copyright &nbsp; STUDENT DORM SYSTEM @ LiuBo </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hp.bishe.dao.GenRenXinXiDao">
+    <update id="xiu" parameterType="com.hp.bishe.bean.Student">
+        update student set username=#{username},sex=#{sex},clazzId=#{clazzId},
+        sushe=#{sushe},bed=#{bed},remark=#{remark} where sn=#{sn}
+    </update>
+</mapper>

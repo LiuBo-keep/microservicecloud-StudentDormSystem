@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.queqin {
+    width: 968px;
+    height: 511px;
+    float: left;
+    background-color: white;
+    border: 1px solid #b2bec3;
+    border-collapse: collapse;
+    position: relative;
+    top: 45px;
+    left: 180px;
+}
+
+.queqin-top {
+    width: 968px;
+    height: 45px;
+    border-bottom: 1px solid #b2bec3;
+    border-collapse: collapse;
+}
+
+.queqin-top h3 {
+    color: #4d4d4d;
+    position: relative;
+    left: 20px;
+}
+
+.queqin-main {
+    width: 600px;
+    height: 279px;
+    position: relative;
+    top: 72px;
+    left: 176px;
+}
+
+.queqin-main li {
+    height: 56px;
+    list-style: none;
+    position: relative;
+    top: 6px;
+    left: -23px;
+}
+
+.queqin-main i {
+    color: red;
+}
+
+.queqin-main li input {
+    width: 225px;
+    height: 25px;
+    position: relative;
+    top: 12px;
+    left: 112px;
+}
+
+.queqin-main li span {
+    font-family: serif;
+    position: relative;
+    top: 14px;
+    left: 110px;
+}
+
+.queqin-main li i {
+    position: relative;
+    top: 17px;
+    left: 105px;
+}
+.queqin-l{
+    width: 90px!important;
+    position: relative!important;
+    left: 128px!important;
+}
+
+.queqin-r{
+    width: 90px!important;
+    position: relative!important;
+    left: 258px!important;
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hp.bishe.dao.QueQinDao">
+    <!--总数-->
+    <select id="findConnt" parameterType="com.hp.bishe.vo.Info" resultType="Integer">
+        select count(1) from queqin
+        <where>
+            <if test="sn!=null and sn!=''">
+                sn=#{sn}
+            </if>
+            <if test="start!=null">
+                and data between #{start} and #{stop}
+            </if>
+        </where>
+    </select>
+
+    <!--结果集-->
+    <select id="findByData" parameterType="com.hp.bishe.vo.Info" resultType="com.hp.bishe.bean.QueQin">
+        select * from queqin
+        <where>
+            <if test="sn!=null and sn!=''">
+                sn=#{sn}
+            </if>
+            <if test="start!=null">
+                and data between #{start} and #{stop}
+            </if>
+        </where>
+        order by data
+        limit #{startRow},#{size}
+    </select>
+</mapper>
