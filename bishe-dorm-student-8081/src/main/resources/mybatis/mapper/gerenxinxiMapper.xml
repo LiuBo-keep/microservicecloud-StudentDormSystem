@@ -15,4 +15,8 @@
     <update id="upPassword" parameterType="com.hp.bishe.vo.PasswordVo">
         update student set password=#{newPassword2} where sn=#{sn}
     </update>
+
+    <update id="upPic" parameterType="com.hp.bishe.bean.Student">
+        update student set photo=#{photo} where sn=#{sn}
+    </update>
 </mapper>

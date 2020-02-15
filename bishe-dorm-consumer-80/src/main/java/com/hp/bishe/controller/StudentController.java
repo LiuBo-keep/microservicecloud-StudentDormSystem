@@ -5,14 +5,17 @@ import com.hp.bishe.bean.Student;
 import com.hp.bishe.utils.SessionUtil;
 import com.hp.bishe.vo.Info;
 import com.hp.bishe.vo.PasswordVo;
+import com.hp.bishe.vo.PicVo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.multipart.MultipartFile;
 
 @RestController
 public class StudentController {
@@ -64,6 +67,16 @@ public class StudentController {
         passwordVo.setNewPassword1(newPassword1);
         passwordVo.setNewPassword2(newPassword2);
         return restTemplate.postForObject(REST_URL_PREFIX_Student+"/student/password",passwordVo,JsonResult.class);
+    }
+
+    @RequestMapping("/student/pic")
+    public JsonResult upPic(
+            @RequestPart(value = "photo",required = false) MultipartFile photo
+    ){
+        PicVo picVo=new PicVo();
+        picVo.setSn("1850510408");
+        picVo.setPhoto(photo);
+    return restTemplate.postForObject(REST_URL_PREFIX_Student+"/student/pic",picVo,JsonResult.class);
     }
 
     @RequestMapping("/student/que")

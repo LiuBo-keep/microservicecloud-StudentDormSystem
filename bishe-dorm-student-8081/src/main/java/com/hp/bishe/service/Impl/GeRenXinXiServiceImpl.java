@@ -29,4 +29,12 @@ public class GeRenXinXiServiceImpl implements GenRenXinXiService {
            return genRenXinXiDao.upPassword(passwordVo);
         }
     }
+
+    @Override
+    public int upPic(String picName, String sn) {
+        Student student=new Student();
+        student.setSn(sn);
+        student.setPhoto(picName);
+        return genRenXinXiDao.upPic(student);
+    }
 }

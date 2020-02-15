@@ -11,4 +11,6 @@ public interface GenRenXinXiDao {
     public Student findBySn(String sn);
 
     public int upPassword(PasswordVo passwordVo);
+
+    public int upPic(Student student);
 }

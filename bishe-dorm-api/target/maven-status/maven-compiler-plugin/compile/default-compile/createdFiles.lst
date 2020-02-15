@@ -11,3 +11,4 @@ com\hp\bishe\vo\PasswordVo.class
 com\hp\bishe\bean\Admin.class
 com\hp\bishe\Utils\PageObject.class
 com\hp\bishe\bean\WeiXiu.class
+com\hp\bishe\vo\PicVo.class
