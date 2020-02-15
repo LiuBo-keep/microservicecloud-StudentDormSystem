@@ -121,7 +121,7 @@ function xiu(){
     console.log(data);
     $.ajax({
         type: "post",
-        url: "/Alter/student",
+        url: "/student/password",
         data: data,
         dataType: "json", //返回数据类型
         success: function(result){
@@ -129,7 +129,7 @@ function xiu(){
             if(1 == result.state){
                 console.log(result);
                 //修改成功
-                alert(result.message+"将跳转到登录页面");
+                alert(result.message);
                 window.setTimeout(doUpdate(),10000);
             } else{
                 console.log(result);

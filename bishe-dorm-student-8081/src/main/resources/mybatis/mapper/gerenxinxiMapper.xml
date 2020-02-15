@@ -7,4 +7,12 @@
         update student set username=#{username},sex=#{sex},clazzId=#{clazzId},
         sushe=#{sushe},bed=#{bed},remark=#{remark} where sn=#{sn}
     </update>
+
+    <select id="findBySn" parameterType="String" resultType="com.hp.bishe.bean.Student">
+        select password from student where sn=#{sn}
+    </select>
+
+    <update id="upPassword" parameterType="com.hp.bishe.vo.PasswordVo">
+        update student set password=#{newPassword2} where sn=#{sn}
+    </update>
 </mapper>

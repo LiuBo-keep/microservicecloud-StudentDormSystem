@@ -3,6 +3,7 @@ package com.hp.bishe.controller;
 import com.hp.bishe.Utils.JsonResult;
 import com.hp.bishe.bean.Student;
 import com.hp.bishe.service.GenRenXinXiService;
+import com.hp.bishe.vo.PasswordVo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,5 +50,20 @@ public class GeRenXinXiGuanLiController {
         redisTemplate.opsForValue().set("Student",student);
 
         return new JsonResult(1,"修改成功！");
+    }
+
+    /**
+     * 学生修改密码
+     */
+    @PostMapping("/password")
+    public JsonResult upPassword(
+            @RequestBody PasswordVo passwordVo
+    ){
+        int num=genRenXinXiService.upPassword(passwordVo);
+        if (0==num){
+            return new JsonResult(0,"旧密码有误，请重新输入！");
+        }else {
+            return new JsonResult(1,"修改成功,即将跳转登录页，请重新登录！");
+        }
     }
 }

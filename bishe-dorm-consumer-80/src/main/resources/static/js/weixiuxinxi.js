@@ -63,7 +63,7 @@ function xiu(){
     console.log(data);
     $.ajax({
         type: "post",
-        url: "/Alter/student",
+        url: "/student/password",
         data: data,
         dataType: "json", //返回数据类型
         success: function(result){
