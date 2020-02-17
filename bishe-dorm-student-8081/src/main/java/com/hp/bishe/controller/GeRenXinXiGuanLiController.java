@@ -4,7 +4,6 @@ import com.hp.bishe.Utils.JsonResult;
 import com.hp.bishe.bean.Student;
 import com.hp.bishe.service.GenRenXinXiService;
 import com.hp.bishe.vo.PasswordVo;
-import com.hp.bishe.vo.PicVo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +12,9 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.BufferedOutputStream;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.UUID;
 
@@ -82,23 +83,23 @@ public class GeRenXinXiGuanLiController {
     @PostMapping("/pic")
     public JsonResult upPic(
             @RequestParam("sn") String sn,
-            @RequestPart("phone") MultipartFile phone
+            @RequestPart("photo") MultipartFile photo
             ) throws IOException {
-        if (phone!=null){
-            if (phone.getSize()<10485760){
+        if (photo!=null){
+            if (photo.getSize()<10485760){
                 //获取文件扩展名
-                String suffix=phone.getOriginalFilename().substring(phone.getOriginalFilename().lastIndexOf(".")+1,phone.getOriginalFilename().length());
+                String suffix=photo.getOriginalFilename().substring(photo.getOriginalFilename().lastIndexOf(".")+1,photo.getOriginalFilename().length());
                 if ("jpg,png,gif,jpeg".contains(suffix.toLowerCase())){
                     //用uuid给图片重新命名
                     String uuid=UUID.randomUUID().toString().toLowerCase().replace("-","");
                     String newName=uuid.concat("."+suffix);
                     log.info("新的文件名="+newName);
 
-                    //将文件保存在本地磁盘
-                    File file=new File("M:\\photo\\"+newName);
-                    if (!file.exists()){
-                        file.mkdirs();//判断文件加是否存，不存在就创建
-                    }
+//                    //将文件保存在本地磁盘
+//                    File file=new File("M:\\photo\\"+newName);
+//                    if (!file.exists()){
+//                        file.mkdirs();//判断文件加是否存，不存在就创建
+//                    }
 
                     //将图片名称存到数据库
                     int count=genRenXinXiService.upPic(newName,sn);
@@ -107,7 +108,9 @@ public class GeRenXinXiGuanLiController {
                     }
 
                     //将图片存到本地文件夹
-                    phone.transferTo(file);
+                    byte[] bytes=photo.getBytes();
+                    BufferedOutputStream bufferedOutputStream=new BufferedOutputStream(new FileOutputStream("M:\\photo\\"+newName));
+                    bufferedOutputStream.write(bytes);
 
                     String photoPath ="photo/"+newName;
 

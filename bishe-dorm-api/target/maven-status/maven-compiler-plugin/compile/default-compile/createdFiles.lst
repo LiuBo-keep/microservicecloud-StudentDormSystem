@@ -1,12 +1,14 @@
 com\hp\bishe\vo\Info.class
 com\hp\bishe\bean\QueQin.class
 com\hp\bishe\config\DateConverter.class
+com\hp\bishe\config\FeignMultipartSupportConfig.class
 com\hp\bishe\Utils\JsonResult.class
 com\hp\bishe\bean\Dorm.class
 com\hp\bishe\bean\Student.class
 com\hp\bishe\config\RedisConfig.class
 com\hp\bishe\bean\Login.class
 com\hp\bishe\bean\YiJian.class
+com\hp\bishe\service\Student_PicService.class
 com\hp\bishe\vo\PasswordVo.class
 com\hp\bishe\bean\Admin.class
 com\hp\bishe\Utils\PageObject.class

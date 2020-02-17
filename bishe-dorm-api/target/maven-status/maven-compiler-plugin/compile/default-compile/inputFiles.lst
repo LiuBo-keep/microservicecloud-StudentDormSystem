@@ -3,7 +3,9 @@ F:\毕设\面向服务后端\bishe_dorm\bishe-dorm-api\src\main\java\com\hp\bish
 F:\毕设\面向服务后端\bishe_dorm\bishe-dorm-api\src\main\java\com\hp\bishe\config\RedisConfig.java
 F:\毕设\面向服务后端\bishe_dorm\bishe-dorm-api\src\main\java\com\hp\bishe\bean\WeiXiu.java
 F:\毕设\面向服务后端\bishe_dorm\bishe-dorm-api\src\main\java\com\hp\bishe\Utils\JsonResult.java
+F:\毕设\面向服务后端\bishe_dorm\bishe-dorm-api\src\main\java\com\hp\bishe\config\FeignMultipartSupportConfig.java
 F:\毕设\面向服务后端\bishe_dorm\bishe-dorm-api\src\main\java\com\hp\bishe\bean\Login.java
+F:\毕设\面向服务后端\bishe_dorm\bishe-dorm-api\src\main\java\com\hp\bishe\service\Student_PicService.java
 F:\毕设\面向服务后端\bishe_dorm\bishe-dorm-api\src\main\java\com\hp\bishe\config\DateConverter.java
 F:\毕设\面向服务后端\bishe_dorm\bishe-dorm-api\src\main\java\com\hp\bishe\bean\Admin.java
 F:\毕设\面向服务后端\bishe_dorm\bishe-dorm-api\src\main\java\com\hp\bishe\vo\PasswordVo.java

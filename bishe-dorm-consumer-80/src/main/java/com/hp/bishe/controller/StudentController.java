@@ -2,6 +2,8 @@ package com.hp.bishe.controller;
 
 import com.hp.bishe.Utils.JsonResult;
 import com.hp.bishe.bean.Student;
+import com.hp.bishe.bean.WeiXiu;
+import com.hp.bishe.service.Student_PicService;
 import com.hp.bishe.utils.SessionUtil;
 import com.hp.bishe.vo.Info;
 import com.hp.bishe.vo.PasswordVo;
@@ -28,6 +30,8 @@ public class StudentController {
     private RestTemplate restTemplate;
     @Autowired
     private RedisTemplate<Object,Object> redisTemplate;
+    @Autowired
+    private Student_PicService service;
     @Autowired
     private SessionUtil sessionUtil;
 
@@ -71,12 +75,9 @@ public class StudentController {
 
     @RequestMapping("/student/pic")
     public JsonResult upPic(
-            @RequestPart(value = "photo",required = false) MultipartFile photo
+           @RequestPart("photo") MultipartFile photo
     ){
-        PicVo picVo=new PicVo();
-        picVo.setSn("1850510408");
-        picVo.setPhoto(photo);
-    return restTemplate.postForObject(REST_URL_PREFIX_Student+"/student/pic",picVo,JsonResult.class);
+        return service.upPic("1850510408",photo);
     }
 
     @RequestMapping("/student/que")
@@ -86,4 +87,12 @@ public class StudentController {
         log.info("学生查询缺勤记录");
         return restTemplate.postForObject(REST_URL_PREFIX_Student+"/student/queqinjilu",info,JsonResult.class);
     }
+
+    @RequestMapping("/student/shangbaoweixiu")
+    public JsonResult add(WeiXiu weiXiu){
+        weiXiu.setSn("1850510408");
+        log.info("学生上报维修信息");
+        return restTemplate.postForObject(REST_URL_PREFIX_Student+"/student/shangbao",weiXiu,JsonResult.class);
+    }
+
 }
