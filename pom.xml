@@ -13,6 +13,7 @@
         <module>bishe-dorm-login-8080</module>
         <module>bishe-dorm-consumer-80</module>
         <module>eureka-server-7001</module>
+        <module>bishe-dorm-teacher-8082</module>
     </modules>
     <packaging>pom</packaging>
 

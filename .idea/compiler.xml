@@ -10,6 +10,7 @@
         <module name="bishedormconsumer80" />
         <module name="bishedormlogin8080" />
         <module name="bishedormstudent8081" />
+        <module name="bishedormteacher8082" />
         <module name="eurekaserver7001" />
       </profile>
     </annotationProcessing>
