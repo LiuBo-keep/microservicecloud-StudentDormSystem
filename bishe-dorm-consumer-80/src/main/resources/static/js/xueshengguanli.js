@@ -33,7 +33,7 @@ function pho() {
     console.log(formdata);
     $.ajax({
         type: "post",
-        url: "/student/pic",
+        url: "/Alter/pic",
         cache:false,
         processData: false, // 告诉jQuery不要去处理发送的数据
         contentType: false, // 告诉jQuery不要去设置Content-Type请求头
@@ -42,14 +42,6 @@ function pho() {
         success: function(result){
             console.log(result);
             if(1 == result.state){
-                $.ajax({
-                    type: "get",
-                    url: "/sion",
-                    dataType: "json", //返回数据类型
-                    success: function(result){
-                        console.log(result.message);
-                    }
-                });
                 shang();
                 console.log(result);
                 //修改成功
@@ -71,7 +63,7 @@ function xiu(){
     console.log(data);
     $.ajax({
         type: "post",
-        url: "/student/password",
+        url: "/Alter/student",
         data: data,
         dataType: "json", //返回数据类型
         success: function(result){

@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.xueshengguanli {
+    width: 968px;
+    height: 511px;
+    float: left;
+    background-color: white;
+    border-collapse: collapse;
+    position: relative;
+    top: 7px;
+    left: 72px;
+}
+
+.xueshengguanli-top {
+    width: 968px;
+    height: 45px;
+    border-bottom: 1px solid #b2bec3;
+    border-collapse: collapse;
+}
+
+.xueshengguanli-top h3 {
+    color: #4d4d4d;
+    position: relative;
+    left: 20px;
+}
+
+.xueshengguanli-data {
+    width: 968px;
+    height: 45px;
+    border-bottom: 1px solid #b2bec3;
+    border-collapse: collapse;
+}
+
+.xueshengguanli-main table {
+    font-family: cursive;
+    font-size: larger;
+    color: #4d4d4d;
+    border-collapse: collapse;
+    border: 1px solid #b2bec3;
+}
+
+.xueshengguanli-main th {
+    width: 192.8px;
+    height: 35px;
+    text-align: center;
+}
+
+.xueshengguanli-main td {
+    width: 192.8px;
+    height: 30px;
+    text-align: center;
+    font-size: initial;
+    font-family: monospace;
+    padding-left: 4px;
+}
+
+.xueshengguanli-data form {
+    font-family: serif;
+    font-weight: bolder;
+    position: relative;
+    top: 11px;
+    left: 430px;
+}
