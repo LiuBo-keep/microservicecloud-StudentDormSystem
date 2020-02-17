@@ -100,6 +100,14 @@ function pho() {
         success: function(result){
             console.log(result);
             if(1 == result.state){
+                $.ajax({
+                    type: "get",
+                    url: "/sion",
+                    dataType: "json", //返回数据类型
+                    success: function(result){
+                        console.log(result.message);
+                    }
+                });
                 shang();
                 console.log(result);
                 //修改成功

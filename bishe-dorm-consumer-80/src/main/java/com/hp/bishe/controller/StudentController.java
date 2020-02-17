@@ -3,6 +3,7 @@ package com.hp.bishe.controller;
 import com.hp.bishe.Utils.JsonResult;
 import com.hp.bishe.bean.Student;
 import com.hp.bishe.bean.WeiXiu;
+import com.hp.bishe.bean.YiJian;
 import com.hp.bishe.service.Student_PicService;
 import com.hp.bishe.utils.SessionUtil;
 import com.hp.bishe.vo.Info;
@@ -84,15 +85,20 @@ public class StudentController {
     public JsonResult get(Info info){
 //        Student student=(Student) redisTemplate.opsForValue().get("Student");
         info.setSn("1850510408");
-        log.info("学生查询缺勤记录");
+        log.info("学生查询缺勤记录"+info);
         return restTemplate.postForObject(REST_URL_PREFIX_Student+"/student/queqinjilu",info,JsonResult.class);
     }
 
     @RequestMapping("/student/shangbaoweixiu")
     public JsonResult add(WeiXiu weiXiu){
         weiXiu.setSn("1850510408");
-        log.info("学生上报维修信息");
+        log.info("学生上报维修信息"+weiXiu);
         return restTemplate.postForObject(REST_URL_PREFIX_Student+"/student/shangbao",weiXiu,JsonResult.class);
     }
 
+    @RequestMapping("/student/yijian")
+    public JsonResult add(YiJian yiJian){
+        log.info("学生建议评价："+yiJian);
+     return restTemplate.postForObject(REST_URL_PREFIX_Student+"/student/jianyi",yiJian,JsonResult.class);
+    }
 }
