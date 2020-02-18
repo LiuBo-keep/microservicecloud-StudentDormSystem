@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hp.bishe.dao.DormDao">
+
+    <insert id="add" parameterType="com.hp.bishe.bean.Dorm">
+        insert into dorm (dormId, dormtype, dormMonitor, dormMonitorPhone)
+        values (#{dormId},#{dormType},#{dormMonitor},#{dormMonitorPhone})
+    </insert>
+
+    <select id="findById" parameterType="String" resultType="com.hp.bishe.bean.Dorm">
+        select * from dorm where dormId=#{dormId}
+    </select>
+
+    <!--总数-->
+    <select id="findConnt" parameterType="com.hp.bishe.vo.DormVo" resultType="Integer">
+        select count(1) from dorm
+        <where>
+            <if test="dormId!=null and dormId!=''">
+                dormid=#{dormId}
+            </if>
+            <if test="dormMonitor!=null and dormMonitor!=''">
+                and dormMonitor=#{dormMonitor}
+            </if>
+        </where>
+    </select>
+
+    <!--结果集-->
+    <select id="findByData" parameterType="com.hp.bishe.vo.DormVo" resultType="com.hp.bishe.bean.Dorm">
+        select * from dorm
+        <where>
+            <if test="dormId!=null and dormId!=''">
+                dormid=#{dormId}
+            </if>
+            <if test="dormMonitor!=null and dormMonitor!=''">
+                and dormMonitor=#{dormMonitor}
+            </if>
+        </where>
+        order by dormid
+        limit #{startRow},#{size}
+    </select>
+</mapper>

@@ -1,8 +1,8 @@
+com\hp\bishe\vo\DormVo.class
 com\hp\bishe\vo\Info.class
 com\hp\bishe\bean\QueQin.class
 com\hp\bishe\config\DateConverter.class
 com\hp\bishe\config\FeignMultipartSupportConfig.class
-com\hp\bishe\service\TeacherService.class
 com\hp\bishe\Utils\JsonResult.class
 com\hp\bishe\bean\Dorm.class
 com\hp\bishe\bean\Student.class

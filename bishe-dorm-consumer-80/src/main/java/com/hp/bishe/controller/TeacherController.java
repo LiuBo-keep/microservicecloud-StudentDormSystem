@@ -1,6 +1,8 @@
 package com.hp.bishe.controller;
 
 import com.hp.bishe.Utils.JsonResult;
+import com.hp.bishe.bean.Dorm;
+import com.hp.bishe.vo.DormVo;
 import com.hp.bishe.vo.StudentInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,6 +23,13 @@ public class TeacherController {
     @Autowired
     private RestTemplate restTemplate;
 
+    /**
+     * 学生管理
+     * @param studentInfo
+     * @param qita
+     * @param qitanei
+     * @return
+     */
     @RequestMapping("/xueShengGuanLi")
     public JsonResult getAll(
             StudentInfo studentInfo,
@@ -37,5 +46,31 @@ public class TeacherController {
             studentInfo.setClazz(qitanei);
         }
         return restTemplate.postForObject(REST_URL_PREFIX_Teacher+"/teacher/xueShengGuanLi",studentInfo,JsonResult.class);
+    }
+
+    /**
+     * 宿舍管理
+     */
+    //查询所有宿舍
+    @RequestMapping("/teacher/dorm")
+    public JsonResult getAll(
+            DormVo dormVo,
+            @RequestParam("dorm") String dorm,
+            @RequestParam("dorms") String dorms
+    ){
+        if ("寝室".equals(dorm)){
+            dormVo.setDormId(dorms);
+        }
+        if ("舍长".equals(dorm)){
+            dormVo.setDormMonitor(dorms);
+        }
+
+        return restTemplate.postForObject(REST_URL_PREFIX_Teacher+"/teacher/dorm",dormVo,JsonResult.class);
+    }
+
+    //添加宿舍
+    @RequestMapping("/teacher/addDorm")
+    public JsonResult add(Dorm dorm){
+        return restTemplate.postForObject(REST_URL_PREFIX_Teacher+"/teacher/addDorm",dorm,JsonResult.class);
     }
 }
