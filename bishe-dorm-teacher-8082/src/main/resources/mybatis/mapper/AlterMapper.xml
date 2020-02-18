@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hp.bishe.dao.AlterDao">
+
+    <select id="findByusername" parameterType="String" resultType="com.hp.bishe.bean.Admin">
+        select password from admin where username=#{username}
+    </select>
+
+    <update id="upPassword" parameterType="com.hp.bishe.vo.PasswordVo">
+        update admin set password=#{newPassword2} where username=#{username}
+    </update>
+</mapper>

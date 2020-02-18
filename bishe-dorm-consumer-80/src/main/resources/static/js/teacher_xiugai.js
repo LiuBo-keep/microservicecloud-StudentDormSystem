@@ -63,13 +63,21 @@ function xiu(){
     console.log(data);
     $.ajax({
         type: "post",
-        url: "/Alter/student",
+        url: "/teacher/password",
         data: data,
         dataType: "json", //返回数据类型
         success: function(result){
             console.log(result);
             if(1 == result.state){
                 console.log(result);
+                $.ajax({
+                    type: "get",
+                    url: "/sion",
+                    dataType: "json", //返回数据类型
+                    success: function(result){
+                        console.log(result.message);
+                    }
+                });
                 //修改成功
                 alert(result.message+"将跳转到登录页面");
                 window.setTimeout(doUpdate(),10000);

@@ -1,17 +1,16 @@
 package com.hp.bishe.controller;
 
 import com.hp.bishe.Utils.JsonResult;
+import com.hp.bishe.bean.Admin;
 import com.hp.bishe.bean.Dorm;
 import com.hp.bishe.bean.Student;
 import com.hp.bishe.vo.DormVo;
+import com.hp.bishe.vo.PasswordVo;
 import com.hp.bishe.vo.StudentInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 import javax.servlet.http.HttpSession;
@@ -26,6 +25,37 @@ public class TeacherController {
 
     @Autowired
     private RestTemplate restTemplate;
+
+    /**
+     * 管理员修改密码
+     */
+    @PostMapping("/password")
+    public JsonResult upPassword(
+            @RequestParam("oldPassword") String oldPassword,
+            @RequestParam("newPassword1") String newPassword1,
+            @RequestParam("newPassword2") String newPassword2,
+            HttpSession session
+    ){
+        if (oldPassword.trim()==""||oldPassword.trim()==null){
+            return new JsonResult(0,"密码不能为空");
+        }
+        if (newPassword1.trim()==""||newPassword1.trim()==null){
+            return new JsonResult(0,"密码不能为空");
+        }
+        if (newPassword2.trim()==""||newPassword2.trim()==null){
+            return new JsonResult(0,"密码不能为空");
+        }
+        if (!newPassword1.equals(newPassword2)){
+            return new JsonResult(0,"新密码两次输入不一致,请重新输入！");
+        }
+//        Admin admin=(Admin) session.getAttribute("user");
+        PasswordVo passwordVo=new PasswordVo();
+        passwordVo.setUsername("admin");
+        passwordVo.setOldPassword(oldPassword);
+        passwordVo.setNewPassword1(newPassword1);
+        passwordVo.setNewPassword2(newPassword2);
+        return restTemplate.postForObject(REST_URL_PREFIX_Teacher+"/teacher/password",passwordVo,JsonResult.class);
+    }
 
     /**
      * 学生管理
