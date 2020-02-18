@@ -67,12 +67,12 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addViewController("/weiXiuJiLu").setViewName("weixiujilu");
         registry.addViewController("/jianYiPingJia").setViewName("yijianpingjia");
         registry.addViewController("/xueShengGuanLi").setViewName("xueshengguanli");
-//        registry.addViewController("/suSheGuanLi").setViewName("suSheGuanLi");
-//        registry.addViewController("/XueShengRuzhuDengJi").setViewName("XueShengRuzhuDengJi");
-//        registry.addViewController("/xueShengQinShiTiaoHuan").setViewName("xueShengQinShiTiaoHuan");
-//        registry.addViewController("/xueShengQianChu").setViewName("xueShengQianChu");
-//        registry.addViewController("/qianChuJiLu").setViewName("qianChuJiLu");
-//        registry.addViewController("/Queqin").setViewName("Queqin");
+        registry.addViewController("/suSheGuanLi").setViewName("suSheGuanLi");
+        registry.addViewController("/XueShengRuzhuDengJi").setViewName("XueShengRuzhuDengJi");
+        registry.addViewController("/xueShengQinShiTiaoHuan").setViewName("xueShengQinShiTiaoHuan");
+        registry.addViewController("/xueShengQianChu").setViewName("xueShengQianChu");
+        registry.addViewController("/qianChuJiLu").setViewName("qianChuJiLu");
+        registry.addViewController("/Queqin").setViewName("Queqin");
     }
 
     @Override

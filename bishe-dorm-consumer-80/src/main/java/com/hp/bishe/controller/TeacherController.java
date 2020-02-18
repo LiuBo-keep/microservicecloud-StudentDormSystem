@@ -52,11 +52,11 @@ public class TeacherController {
      * 宿舍管理
      */
     //查询所有宿舍
-    @RequestMapping("/teacher/dorm")
+    @RequestMapping("/dorm")
     public JsonResult getAll(
             DormVo dormVo,
-            @RequestParam("dorm") String dorm,
-            @RequestParam("dorms") String dorms
+            @RequestParam(value = "dorm",required = false) String dorm,
+            @RequestParam(value = "dorms",required = false) String dorms
     ){
         if ("寝室".equals(dorm)){
             dormVo.setDormId(dorms);
@@ -69,7 +69,7 @@ public class TeacherController {
     }
 
     //添加宿舍
-    @RequestMapping("/teacher/addDorm")
+    @RequestMapping("/addDorm")
     public JsonResult add(Dorm dorm){
         return restTemplate.postForObject(REST_URL_PREFIX_Teacher+"/teacher/addDorm",dorm,JsonResult.class);
     }
