@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d5982e6-1851-482e-a09a-0914fd5b1018" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/bishe-dorm-api/src/main/java/com/hp/bishe/vo/DormVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/controller/DormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/dao/DormDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/service/DormService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/service/Impl/DormServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/resources/mybatis/mapper/dormMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bishe-dorm-api/target/bishe-dorm-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-api/target/bishe-dorm-api-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bishe-dorm-api/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-api/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bishe-dorm-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bishe-dorm-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/java/com/hp/bishe/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/java/com/hp/bishe/controller/TeacherController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/TeacherProvider8082_App.java" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/TeacherProvider8082_App.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -70,23 +63,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DormController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/controller/DormController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TeacherProvider8082_App.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/TeacherProvider8082_App.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="8" selection-start-line="8" selection-start-column="2" selection-end-line="9" selection-end-column="31" />
+              <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -165,8 +146,8 @@
         <option value="$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/dao/DormDao.java" />
         <option value="$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/resources/mybatis/mapper/dormMapper.xml" />
         <option value="$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/service/DormService.java" />
-        <option value="$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/service/Impl/DormServiceImpl.java" />
         <option value="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/java/com/hp/bishe/controller/TeacherController.java" />
+        <option value="$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/service/Impl/DormServiceImpl.java" />
         <option value="$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/controller/DormController.java" />
         <option value="$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/TeacherProvider8082_App.java" />
       </list>
@@ -612,7 +593,7 @@
       <workItem from="1581860316342" duration="34000" />
       <workItem from="1581916712527" duration="11874000" />
       <workItem from="1581951281443" duration="6855000" />
-      <workItem from="1582015922737" duration="6396000" />
+      <workItem from="1582015922737" duration="6651000" />
     </task>
     <task id="LOCAL-00001" summary="new">
       <created>1581767310746</created>
@@ -663,11 +644,18 @@
       <option name="project" value="LOCAL" />
       <updated>1582020097871</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="new">
+      <created>1582022589874</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1582022589874</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109780000" />
+    <option name="totallyTimeSpent" value="110035000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -700,7 +688,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.19497785" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38700148" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33713138" />
@@ -845,13 +833,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/static/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="24" column="27" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="24" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -1197,20 +1178,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/service/Impl/DormServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="51" column="35" lean-forward="true" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1371#1372#0" expanded="true" />
-            <element signature="e#1411#1412#0" expanded="true" />
-            <element signature="e#1464#1465#0" expanded="true" />
-            <element signature="e#1507#1508#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/resources/mybatis/mapper/dormMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1228,10 +1195,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bishe-dorm-api/src/main/java/com/hp/bishe/bean/Dorm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/controller/DormController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        <state relative-caret-position="225">
+          <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/service/Impl/DormServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1241,7 +1225,7 @@
     <entry file="file://$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/TeacherProvider8082_App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="8" selection-start-line="8" selection-start-column="2" selection-end-line="9" selection-end-column="31" />
+          <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
