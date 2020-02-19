@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * 学生信息实体
@@ -38,4 +39,6 @@ public class Student implements Serializable {
     private String remark;
     //迁出备注
     private String qianRemark;
+    //迁出日期
+    private Date qianchuDate;
 }

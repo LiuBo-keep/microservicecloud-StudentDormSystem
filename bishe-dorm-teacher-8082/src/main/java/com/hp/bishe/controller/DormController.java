@@ -15,7 +15,7 @@ public class DormController {
     @Autowired
     private DormService dormService;
 
-    //查询所以宿舍
+    //查询所有宿舍
     @PostMapping("/dorm")
     public JsonResult getAll(
             @RequestBody DormVo dormVo
