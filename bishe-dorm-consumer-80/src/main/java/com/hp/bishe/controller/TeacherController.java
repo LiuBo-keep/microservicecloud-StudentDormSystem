@@ -169,9 +169,15 @@ public class TeacherController {
     }
 
     /**
-     * 迁出记录
+     * 查询所有迁出记录
      */
-
+    @RequestMapping("/AllQianChu")
+    public JsonResult getAll(
+            StudentInfo studentInfo
+    ){
+        log.info("查询所有迁出记录");
+        return restTemplate.postForObject(REST_URL_PREFIX_Teacher+"/teacher/AllQianChu",studentInfo,JsonResult.class);
+    }
 
     /**
      * 缺勤记录

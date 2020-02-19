@@ -31,7 +31,7 @@ public class QianChuController {
     }
 
     //查询所有迁出学生
-    @GetMapping("/AllQianChu")
+    @PostMapping("/AllQianChu")
     public JsonResult getAll(
             @RequestBody StudentInfo studentInfo
             ){
