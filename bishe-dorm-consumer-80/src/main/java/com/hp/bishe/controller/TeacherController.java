@@ -176,6 +176,7 @@ public class TeacherController {
             StudentInfo studentInfo
     ){
         log.info("查询所有迁出记录");
+        studentInfo.setStatus("迁出");
         return restTemplate.postForObject(REST_URL_PREFIX_Teacher+"/teacher/AllQianChu",studentInfo,JsonResult.class);
     }
 

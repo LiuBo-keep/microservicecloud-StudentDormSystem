@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.qianchujilu {
+    width: 968px;
+    height: 511px;
+    float: left;
+    background-color: white;
+    border: 1px solid #b2bec3;
+    border-collapse: collapse;
+    position: relative;
+    top: 7px;
+    left: 72px;
+}
+
+.qianchujilu-top {
+    width: 968px;
+    height: 45px;
+    border-bottom: 1px solid #b2bec3;
+    border-collapse: collapse;
+}
+
+.qianchujilu-top h3 {
+    color: #4d4d4d;
+    position: relative;
+    left: 20px;
+}
+
+.qianchujilu-data {
+    width: 968px;
+    height: 45px;
+    border-bottom: 1px solid #b2bec3;
+    border-collapse: collapse;
+}
+
+.qianchujilu-main table {
+    font-family: cursive;
+    font-size: larger;
+    color: #4d4d4d;
+    border-collapse: collapse;
+    border: 1px solid #b2bec3;
+}
+
+.qianchujilu-main th {
+    width: 192.8px;
+    height: 35px;
+    text-align: center;
+}
+
+.qianchujilu-main td {
+    width: 192.8px;
+    height: 30px;
+    text-align: center;
+    font-size: initial;
+    font-family: monospace;
+    padding-left: 4px;
+}
+
+.qianchujilu-data form {
+    font-family: serif;
+    font-weight: bolder;
+    position: relative;
+    top: 11px;
+    left: 430px;
+}
