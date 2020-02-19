@@ -4,6 +4,7 @@ import com.hp.bishe.Utils.JsonResult;
 import com.hp.bishe.bean.Admin;
 import com.hp.bishe.bean.Dorm;
 import com.hp.bishe.bean.Student;
+import com.hp.bishe.service.Teacher_PicService;
 import com.hp.bishe.vo.DormVo;
 import com.hp.bishe.vo.PasswordVo;
 import com.hp.bishe.vo.StudentInfo;
@@ -12,6 +13,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpSession;
 
@@ -25,10 +27,13 @@ public class TeacherController {
 
     @Autowired
     private RestTemplate restTemplate;
+    @Autowired
+    private Teacher_PicService service;
 
     /**
-     * 管理员修改密码
+     * 管理员修改
      */
+    //修改密码
     @PostMapping("/password")
     public JsonResult upPassword(
             @RequestParam("oldPassword") String oldPassword,
@@ -55,6 +60,14 @@ public class TeacherController {
         passwordVo.setNewPassword1(newPassword1);
         passwordVo.setNewPassword2(newPassword2);
         return restTemplate.postForObject(REST_URL_PREFIX_Teacher+"/teacher/password",passwordVo,JsonResult.class);
+    }
+
+    //修改图片
+    @RequestMapping("/pic")
+    public JsonResult upPic(
+            @RequestPart("photo") MultipartFile photo
+    ){
+        return service.upPic("admin",photo);
     }
 
     /**

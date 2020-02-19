@@ -8,6 +8,7 @@ com\hp\bishe\bean\Dorm.class
 com\hp\bishe\bean\Student.class
 com\hp\bishe\config\RedisConfig.class
 com\hp\bishe\vo\StudentInfo.class
+com\hp\bishe\service\Teacher_PicService.class
 com\hp\bishe\bean\Login.class
 com\hp\bishe\bean\YiJian.class
 com\hp\bishe\service\Student_PicService.class

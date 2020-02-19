@@ -11,4 +11,8 @@
     <update id="upPassword" parameterType="com.hp.bishe.vo.PasswordVo">
         update admin set password=#{newPassword2} where username=#{username}
     </update>
+
+    <update id="upPic" parameterType="com.hp.bishe.bean.Admin">
+        update admin set photo=#{photo} where username=#{username}
+    </update>
 </mapper>

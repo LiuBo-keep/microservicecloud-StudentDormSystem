@@ -23,4 +23,12 @@ public class AlterServiceImpl implements AlterService {
             return alterDao.upPassword(passwordVo);
         }
     }
+
+    @Override
+    public int upPic(String picName, String username) {
+        Admin admin=new Admin();
+        admin.setUsername(username);
+        admin.setPhoto(picName);
+        return alterDao.upPic(admin);
+    }
 }
