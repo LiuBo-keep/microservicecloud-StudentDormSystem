@@ -3,6 +3,7 @@ package com.hp.bishe.controller;
 import com.hp.bishe.Utils.JsonResult;
 import com.hp.bishe.bean.Admin;
 import com.hp.bishe.bean.Dorm;
+import com.hp.bishe.bean.QueQin;
 import com.hp.bishe.bean.Student;
 import com.hp.bishe.service.Teacher_PicService;
 import com.hp.bishe.vo.DormVo;
@@ -11,11 +12,13 @@ import com.hp.bishe.vo.StudentInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpSession;
+import java.util.Date;
 
 @RestController
 @RequestMapping("/teacher")
@@ -163,5 +166,39 @@ public class TeacherController {
         student.setSn((String)session.getAttribute("xuehao"));
         log.info("学生迁出");
         return restTemplate.postForObject(REST_URL_PREFIX_Teacher+"/teacher/tu",student,JsonResult.class);
+    }
+
+    /**
+     * 迁出记录
+     */
+
+
+    /**
+     * 缺勤记录
+     */
+    @RequestMapping("/queqin")
+    public JsonResult queqin(
+            @RequestParam("xuehao") String xuehao,
+            @RequestParam("date") Date date,
+            @RequestParam("remake") String remake
+    ){
+        if (StringUtils.isEmpty(xuehao)){
+            return new JsonResult(0,"缺勤学生，学号不能为空！");
+        }
+        if (StringUtils.isEmpty(date)){
+            return new JsonResult(0,"缺勤日期不能为空！");
+        }
+        if (StringUtils.isEmpty(date)){
+            return new JsonResult(0,"缺勤原因不能为空！");
+        }
+
+        log.info("缺勤信息为->"+"学号："+xuehao+"日期："+date+"备注："+remake);
+
+        QueQin queQin=new QueQin();
+        queQin.setSn(xuehao);
+        queQin.setData(date);
+        queQin.setRemake(remake);
+
+        return restTemplate.postForObject(REST_URL_PREFIX_Teacher+"/teacher/queqin",queQin,JsonResult.class);
     }
 }

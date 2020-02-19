@@ -1,9 +1,10 @@
 package com.hp.bishe.controller;
 
 import com.hp.bishe.Utils.JsonResult;
+import com.hp.bishe.Utils.PageObject;
 import com.hp.bishe.bean.Student;
 import com.hp.bishe.service.QianChuService;
-import com.hp.bishe.service.QinShiTiaoHuanService;
+import com.hp.bishe.vo.StudentInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -27,5 +28,14 @@ public class QianChuController {
         student.setQianchuDate(new Date());
         qianChuService.updata(student);
         return new JsonResult(1,"迁出成功");
+    }
+
+    //查询所有迁出学生
+    @GetMapping("/AllQianChu")
+    public JsonResult getAll(
+            @RequestBody StudentInfo studentInfo
+            ){
+        PageObject<Student> pageObject=qianChuService.findByStatus(studentInfo);
+        return new JsonResult(1,pageObject);
     }
 }

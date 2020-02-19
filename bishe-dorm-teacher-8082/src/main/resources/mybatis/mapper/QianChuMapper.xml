@@ -7,4 +7,11 @@
         update student set password="",status=#{status},qianchuDate=#{qianchuDate, jdbcType=DATE},qianRemark=#{qianRemark} where sn=#{sn}
     </update>
 
+    <select id="findConnt" parameterType="com.hp.bishe.vo.StudentInfo" resultType="Integer">
+        select count(1) from student where status=#{status}
+    </select>
+
+    <select id="findByData" parameterType="com.hp.bishe.vo.StudentInfo" resultType="com.hp.bishe.bean.Student">
+        select qianchuDate,username,sex,clazzId,qianRemark from student where status=#{status}
+    </select>
 </mapper>
