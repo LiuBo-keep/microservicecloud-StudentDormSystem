@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../static/bootstrop/Ionicons/css/ionicons.min.css"/>
     <link rel="stylesheet" href="../static/bootstrop/dist/css/AdminLTE.min.css"/>
     <link rel="stylesheet" href="../static/bootstrop/dist/css/skins/skin-blue.min.css"/>
-    <link rel="stylesheet" href="../static/css/meweixiu.css"/>
+    <link rel="stylesheet" href="../static/css/qianchu.css"/>
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic"/>
 
@@ -204,7 +204,6 @@
             left: 373px;
         }
     </style>
-
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <!--背景-->
@@ -447,7 +446,7 @@
                 </li>
                 <!--<li th:if="${session.Type}==0" class="treeview">-->
                 <li th:if="${session.Type}==0">
-                    <a th:href="@{/gerenxinxiguanli}"><i class="glyphicon glyphicon-user"></i> <span>个人信息管理</span>
+                    <a th:href="@{/geRenXinxiGuanLi}"><i class="glyphicon glyphicon-user"></i> <span>个人信息管理</span>
                     </a>
                 </li>
                 <li th:if="${session.Type}==0">
@@ -476,24 +475,69 @@
 
     <div class="content-wrapper">
         <section class="content-header">
-            <div class="meweixiu" style="position: relative;top: 7px;left: 72px">
-                <div class="meweixiu-top">
-                    <h3>我的维修记录</h3>
+            <div id="qiana" class="qianchu">
+                <div class="qianchu-top">
+                    <h3>学生迁出登记</h3>
                 </div>
-                <div class="meweixiu-data">
-                    <form id="meweixiu_form" name="post">
-                        <span>起始时间：</span>
-                        <input type="date" name="start"/>
-                        &nbsp;
-                        <span>结束时间：</span>
-                        <input type="date" name="stop"/>
-                        <input id="meweixiu" type="button" value="搜索"/>
+                <div class="qianchu-main">
+                    <form id="qianchu-main-form" method="get">
+                        <i>*</i>
+                        <span>学号：</span><input type="text" name="xuehao"/>
+                        <input id="quedin" class="queding" type="button" value="确定"/>
                     </form>
                 </div>
-                <div class="meweixiu-main">
-                    <form>
-                        <table id="weixiutable" border="1" cellspacing="0">
+            </div>
 
+            <div id="qianb" class="qianchu hide">
+                <div class="qianchu-top">
+                    <h3>学生迁出登记</h3>
+                </div>
+                <p>此功能只适用于毕业的学生迁出，迁出后将不可恢复！ 确定要迁出学生吗？</p>
+                <div class="qianchu-nei">
+                    <form id="qianchu-nei-form" method="post">
+                        <table cellspacing="0">
+                            <tr>
+                                <td height="30" align="right">学生学号：</td>
+                                <td>
+                                    <span id="qianchusn"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="30" align="right">学生姓名：</td>
+                                <td>
+                                    <span id="qianchuusername"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="30" align="right">学生性别：</td>
+                                <td>
+                                    <span id="qianchusex"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="30" align="right">目前宿舍：</td>
+                                <td>
+                                    <span id="qianchusushe"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="30" align="right">宿舍床号：</td>
+                                <td>
+                                    <span id="qianchubed"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="40" align="right">迁出备注：</td>
+                                <td>
+                                    <textarea cols="30" rows="5" name="qianremark"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" height="40" align="center">
+                                    <input id="quedingqianchu" type="button" value="确定迁出"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input id="qian_back" type="button" value="返回上页"/>
+                                </td>
+                            </tr>
                         </table>
                     </form>
                 </div>
@@ -578,7 +622,8 @@
 </div>
 <script src="../static/jquery/jquery-1.11.1.min.js"></script>
 <script src="../static/bootstrop/js/bootstrap.js"></script>
-<script src="../static/js/weixiujilu.js"></script>
+<script src="../static/js/qianchu.js"></script>
+<script src="../static/js/teacher_xiugai.js"></script>
 <script src="../static/bootstrop/js/adminlte.min.js"></script>
 </body>
 </html>

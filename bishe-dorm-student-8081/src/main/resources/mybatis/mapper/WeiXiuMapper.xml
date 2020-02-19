@@ -5,7 +5,7 @@
 <mapper namespace="com.hp.bishe.dao.WeiXiuDao">
 
     <insert id="shang" parameterType="com.hp.bishe.bean.WeiXiu">
-        insert into weixiu (sn,addre,obj,phone,status,create_time,cost)values (#{sn},#{addre},#{obj},#{phone},#{status},#{time},#{cost})
+        insert into weixiu (sn,addre,obj,phone,status,create_time,cost)values (#{sn},#{addre},#{obj},#{phone},#{status},#{time,jdbcType=DATE},#{cost})
     </insert>
 
     <select id="get" parameterType="String" resultType="com.hp.bishe.bean.WeiXiu">

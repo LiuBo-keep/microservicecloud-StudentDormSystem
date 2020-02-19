@@ -148,4 +148,20 @@ public class TeacherController {
         student.setBed(newbed);
         return restTemplate.postForObject(REST_URL_PREFIX_Teacher+"/teacher/tiao",student,JsonResult.class);
     }
+
+    /**
+     * 学生迁出登记
+     */
+    //学生迁出
+    @RequestMapping("/tu")
+    public JsonResult upStudent(
+            @RequestParam("qianremark") String qianremark,
+            HttpSession session
+    ){
+        Student student=new Student();
+        student.setQianRemark(qianremark);
+        student.setSn((String)session.getAttribute("xuehao"));
+        log.info("学生迁出");
+        return restTemplate.postForObject(REST_URL_PREFIX_Teacher+"/teacher/tu",student,JsonResult.class);
+    }
 }

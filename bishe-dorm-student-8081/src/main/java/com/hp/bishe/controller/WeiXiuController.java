@@ -28,9 +28,9 @@ public class WeiXiuController {
         }
     }
 
-    @GetMapping("/chaxun")
+    @PostMapping("/chaxun")
     private JsonResult get(
-            Student student
+            @RequestBody Student student
     ){
 //        List<WeiXiu> list=weiXiuService.get(student.getSn());
         List<WeiXiu> list=weiXiuService.get("1850510408");

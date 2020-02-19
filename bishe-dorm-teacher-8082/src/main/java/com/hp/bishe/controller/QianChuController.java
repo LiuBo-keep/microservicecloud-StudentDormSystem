@@ -15,34 +15,16 @@ import java.util.Date;
 public class QianChuController {
 
     @Autowired
-    private QinShiTiaoHuanService qinShiTiaoHuanService;
-    @Autowired
     private QianChuService qianChuService;
-
-
-    //根据查询查询学生
-    @GetMapping("/student/{xuehao}")
-    public JsonResult getBySn(
-            @PathVariable("xuehao") String sn,
-            HttpSession session
-    ){
-        Student student=qinShiTiaoHuanService.findBysn(sn);
-        session.setAttribute("qian",student.getSn());
-        return new JsonResult(1,student);
-    }
 
     //学生迁出
     @PostMapping("/tu")
     public JsonResult upStudent(
-            @RequestParam("qianremark") String qianremark,
+           @RequestBody Student student,
             HttpSession session
     ){
-        Student student=new Student();
-//        student.setSn((String) session.getAttribute("qian"));
-        student.setSn("1850510407");
         student.setStatus("迁出");
         student.setQianchuDate(new Date());
-        student.setQianRemark(qianremark);
         qianChuService.updata(student);
         return new JsonResult(1,"迁出成功");
     }

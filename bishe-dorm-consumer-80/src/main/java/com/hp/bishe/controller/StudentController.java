@@ -96,6 +96,14 @@ public class StudentController {
         return restTemplate.postForObject(REST_URL_PREFIX_Student+"/student/shangbao",weiXiu,JsonResult.class);
     }
 
+    @RequestMapping("/student/chaxun")
+    public JsonResult get(){
+        Student student=new Student();
+        student.setSn("1850510408");
+        log.info("学生查询维修记录");
+        return restTemplate.postForObject(REST_URL_PREFIX_Student+"/student/chaxun",student,JsonResult.class);
+    }
+
     @RequestMapping("/student/yijian")
     public JsonResult add(YiJian yiJian){
         log.info("学生建议评价："+yiJian);
