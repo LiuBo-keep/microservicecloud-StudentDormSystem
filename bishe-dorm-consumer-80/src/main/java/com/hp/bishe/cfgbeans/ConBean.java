@@ -6,6 +6,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.Timer;
+
 @Configuration
 public class ConBean {
 
@@ -18,5 +20,10 @@ public class ConBean {
     @Bean
     public SessionUtil getSessionUtil(){
         return new SessionUtil();
+    }
+
+    @Bean
+    public Timer getTimer(){
+        return new Timer();
     }
 }
