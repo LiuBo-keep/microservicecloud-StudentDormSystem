@@ -34,6 +34,10 @@ public class WeiXiuController {
     ){
 //        List<WeiXiu> list=weiXiuService.get(student.getSn());
         List<WeiXiu> list=weiXiuService.get("1850510408");
+        for (WeiXiu w:list
+             ) {
+            System.out.println(w);
+        }
         return new JsonResult(1,list);
     }
 }

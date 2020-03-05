@@ -19,7 +19,7 @@ public class WeiXiuServiceImpl implements WeiXiuService {
     public int shang(WeiXiu weiXiu) {
         //设置默认状态
         weiXiu.setStatus("未维修");
-        weiXiu.setTime(new Date());
+        weiXiu.setCreate_time(new Date());
         weiXiu.setCost("0");
         return weiXiuDao.shang(weiXiu);
     }

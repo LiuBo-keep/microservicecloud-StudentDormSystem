@@ -28,7 +28,7 @@ public class WeiXiu implements Serializable {
     //维修状态
     private String status;
     //上报时间
-    private Date time;
+    private Date create_time;
     //维修费用
     private String cost;
 

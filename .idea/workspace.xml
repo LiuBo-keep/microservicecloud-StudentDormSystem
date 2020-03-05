@@ -3,15 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="6d5982e6-1851-482e-a09a-0914fd5b1018" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bishe-dorm-consumer-80/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-consumer-80/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/java/com/hp/bishe/BiSheConsumer80_APP.java" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/java/com/hp/bishe/BiSheConsumer80_APP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/java/com/hp/bishe/cfgbeans/ConBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/java/com/hp/bishe/cfgbeans/ConBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/java/com/hp/bishe/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/java/com/hp/bishe/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/java/com/hp/bishe/utils/SessionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/java/com/hp/bishe/utils/SessionUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bishe-dorm-consumer-80/target/classes/com/hp/bishe/BiSheConsumer80_APP.class" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-consumer-80/target/classes/com/hp/bishe/BiSheConsumer80_APP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bishe-dorm-consumer-80/target/classes/com/hp/bishe/cfgbeans/ConBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-consumer-80/target/classes/com/hp/bishe/cfgbeans/ConBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bishe-dorm-consumer-80/target/classes/com/hp/bishe/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-consumer-80/target/classes/com/hp/bishe/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bishe-dorm-consumer-80/target/classes/com/hp/bishe/utils/SessionUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-consumer-80/target/classes/com/hp/bishe/utils/SessionUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bishe-dorm-api/src/main/java/com/hp/bishe/bean/WeiXiu.java" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-api/src/main/java/com/hp/bishe/bean/WeiXiu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bishe-dorm-api/target/bishe-dorm-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-api/target/bishe-dorm-api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bishe-dorm-api/target/classes/com/hp/bishe/bean/WeiXiu.class" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-api/target/classes/com/hp/bishe/bean/WeiXiu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bishe-dorm-api/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-api/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/static/js/weixiujilu.js" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/static/js/weixiujilu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/templates/xueShengQianChu.html" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/templates/xueShengQianChu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/templates/xueShengQinShiTiaoHuan.html" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/templates/xueShengQinShiTiaoHuan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bishe-dorm-consumer-80/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-consumer-80/target/classes/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bishe-dorm-student-8081/src/main/java/com/hp/bishe/controller/WeiXiuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-student-8081/src/main/java/com/hp/bishe/controller/WeiXiuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bishe-dorm-student-8081/src/main/java/com/hp/bishe/service/Impl/WeiXiuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-student-8081/src/main/java/com/hp/bishe/service/Impl/WeiXiuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bishe-dorm-student-8081/target/classes/com/hp/bishe/controller/WeiXiuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-dorm-student-8081/target/classes/com/hp/bishe/controller/WeiXiuController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -69,85 +72,88 @@
     <favorites_list name="bishe_dorm" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EurekaServer7001_App.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eureka-server-7001/src/main/java/com/hp/bishe/EurekaServer7001_App.java">
+    <leaf>
+      <file leaf-file-name="xueShengQinShiTiaoHuan.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/templates/xueShengQinShiTiaoHuan.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-              <folding>
-                <element signature="e#375#376#0" expanded="true" />
-                <element signature="e#445#446#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="223">
+              <caret line="492" column="22" selection-start-line="492" selection-start-column="22" selection-end-line="492" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/java/com/hp/bishe/cfgbeans/ConBean.java">
+      <file leaf-file-name="xueShengQianChu.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/templates/xueShengQianChu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#665#666#0" expanded="true" />
-                <element signature="e#699#700#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="223">
+              <caret line="493" column="22" selection-start-line="493" selection-start-column="22" selection-end-line="493" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/pom.xml">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="83" column="9" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WeiXiuController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bishe-dorm-student-8081/src/main/java/com/hp/bishe/controller/WeiXiuController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WeiXiuMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bishe-dorm-student-8081/src/main/resources/mybatis/mapper/WeiXiuMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="10" column="76" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WeiXiu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bishe-dorm-api/src/main/java/com/hp/bishe/bean/WeiXiu.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="352">
-              <caret line="61" column="15" selection-start-line="61" selection-start-column="15" selection-end-line="61" selection-end-column="15" />
+              <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BiSheConsumer80_APP.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/java/com/hp/bishe/BiSheConsumer80_APP.java">
+      <file leaf-file-name="WeiXiuServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bishe-dorm-student-8081/src/main/java/com/hp/bishe/service/Impl/WeiXiuServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+            <state relative-caret-position="230">
+              <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
               <folding>
-                <element signature="e#546#547#0" expanded="true" />
-                <element signature="e#615#616#0" expanded="true" />
+                <element signature="e#689#690#0" expanded="true" />
+                <element signature="e#729#730#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StudentController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/java/com/hp/bishe/controller/StudentController.java">
+      <file leaf-file-name="weixiujilu.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/static/js/weixiujilu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="25" column="79" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="79" />
+            <state relative-caret-position="125">
+              <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/java/com/hp/bishe/controller/LoginController.java">
+      <file leaf-file-name="queqinjilu.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/static/js/queqinjilu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="54" column="22" lean-forward="true" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SessionUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/java/com/hp/bishe/utils/SessionUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="125">
+              <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="108" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -169,6 +175,8 @@
       <find>mequeqin</find>
       <find>input</find>
       <find>img</find>
+      <find>此</find>
+      <find>sp</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -177,10 +185,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/dao/QinShiTiaoHuanDao.java" />
-        <option value="$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/service/QinShiTiaoHuanService.java" />
-        <option value="$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/service/Impl/QinShiTiaoHuanServiceImpl.java" />
-        <option value="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/templates/xueShengQinShiTiaoHuan.html" />
         <option value="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/static/js/tiaohuan.js" />
         <option value="$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/service/Impl/AlterService.java" />
         <option value="$PROJECT_DIR$/bishe-dorm-api/src/main/java/com/hp/bishe/vo/PasswordVo.java" />
@@ -196,12 +200,9 @@
         <option value="$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/controller/DormController.java" />
         <option value="$PROJECT_DIR$/bishe-dorm-api/src/main/java/com/hp/bishe/bean/Student.java" />
         <option value="$PROJECT_DIR$/bishe-dorm-student-8081/src/main/resources/mybatis/mapper/WeiXiuMapper.xml" />
-        <option value="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/static/js/weixiujilu.js" />
         <option value="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/templates/weixiujilu.html" />
-        <option value="$PROJECT_DIR$/bishe-dorm-student-8081/src/main/java/com/hp/bishe/controller/WeiXiuController.java" />
         <option value="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/java/com/hp/bishe/controller/StudentController.java" />
         <option value="$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/controller/QinShiTiaoHuanController.java" />
-        <option value="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/templates/xueShengQianChu.html" />
         <option value="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/static/js/qianchu.js" />
         <option value="$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/service/QianChuService.java" />
         <option value="$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/service/Impl/QianChuServiceImpl.java" />
@@ -228,6 +229,13 @@
         <option value="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/java/com/hp/bishe/cfgbeans/ConBean.java" />
         <option value="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/java/com/hp/bishe/utils/SessionUtil.java" />
         <option value="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/java/com/hp/bishe/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/templates/xueShengQinShiTiaoHuan.html" />
+        <option value="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/templates/xueShengQianChu.html" />
+        <option value="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/bishe-dorm-student-8081/src/main/java/com/hp/bishe/controller/WeiXiuController.java" />
+        <option value="$PROJECT_DIR$/bishe-dorm-api/src/main/java/com/hp/bishe/bean/WeiXiu.java" />
+        <option value="$PROJECT_DIR$/bishe-dorm-student-8081/src/main/java/com/hp/bishe/service/Impl/WeiXiuServiceImpl.java" />
+        <option value="$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/static/js/weixiujilu.js" />
       </list>
     </option>
   </component>
@@ -286,8 +294,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -319,7 +325,7 @@
               <item name="bishe-dorm-consumer-80" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bishe_dorm" type="b2602c69:ProjectViewProjectNode" />
@@ -327,8 +333,8 @@
               <item name="bishe-dorm-consumer-80" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bishe_dorm" type="b2602c69:ProjectViewProjectNode" />
@@ -336,61 +342,16 @@
               <item name="bishe-dorm-consumer-80" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="hp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bishe_dorm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bishe_dorm" type="462c0819:PsiDirectoryNode" />
-              <item name="bishe-dorm-consumer-80" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="hp" type="462c0819:PsiDirectoryNode" />
-              <item name="bishe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bishe_dorm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bishe_dorm" type="462c0819:PsiDirectoryNode" />
-              <item name="bishe-dorm-consumer-80" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="hp" type="462c0819:PsiDirectoryNode" />
-              <item name="bishe" type="462c0819:PsiDirectoryNode" />
-              <item name="cfgbeans" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bishe_dorm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bishe_dorm" type="462c0819:PsiDirectoryNode" />
-              <item name="bishe-dorm-consumer-80" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="hp" type="462c0819:PsiDirectoryNode" />
-              <item name="bishe" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bishe_dorm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bishe_dorm" type="462c0819:PsiDirectoryNode" />
-              <item name="bishe-dorm-consumer-80" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="hp" type="462c0819:PsiDirectoryNode" />
-              <item name="bishe" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -533,9 +494,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StudentProvider8081_App" />
         <item itemvalue="Application.LoginProvider8080_App" />
         <item itemvalue="Application.TeacherProvider8082_App" />
-        <item itemvalue="Application.StudentProvider8081_App" />
         <item itemvalue="Application.EurekaServer7001_App" />
       </list>
     </recent_temporary>
@@ -572,7 +533,11 @@
       <workItem from="1582274859314" duration="1336000" />
       <workItem from="1582906877789" duration="459000" />
       <workItem from="1582907340748" duration="2318000" />
-      <workItem from="1582966412873" duration="5831000" />
+      <workItem from="1582966412873" duration="7121000" />
+      <workItem from="1583054508528" duration="399000" />
+      <workItem from="1583209254069" duration="2968000" />
+      <workItem from="1583217078364" duration="256000" />
+      <workItem from="1583417740484" duration="1766000" />
     </task>
     <task id="LOCAL-00001" summary="new">
       <created>1581767310746</created>
@@ -707,11 +672,18 @@
       <option name="project" value="LOCAL" />
       <updated>1582132824687</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="定时任务">
+      <created>1582972441338</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1582972441338</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147147000" />
+    <option name="totallyTimeSpent" value="153826000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -738,16 +710,16 @@
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3028065" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3293944" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.32890856" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32791728" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.89660263" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.17282127" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49926144" visible="true" weight="0.2580429" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49926144" visible="true" weight="0.2707775" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.3297587" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -804,7 +776,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new" />
-    <option name="LAST_COMMIT_MESSAGE" value="new" />
+    <MESSAGE value="定时任务" />
+    <option name="LAST_COMMIT_MESSAGE" value="定时任务" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -889,77 +862,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bishe-dorm-student-8081/src/main/resources/mybatis/mapper/WeiXiuMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="140" selection-start-line="7" selection-start-column="140" selection-end-line="7" selection-end-column="140" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bishe-dorm-student-8081/src/main/java/com/hp/bishe/controller/GeRenXinXiGuanLiController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="95" column="47" lean-forward="true" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bishe-dorm-student-8081/src/main/java/com/hp/bishe/controller/QueQinController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/static/js/weixiuxinxi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bishe-dorm-student-8081/src/main/java/com/hp/bishe/controller/WeiXiuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/static/js/weixiujilu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/templates/weixiujilu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="483" column="55" selection-start-line="483" selection-start-column="55" selection-end-line="483" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/controller/AlterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="51" column="59" selection-start-line="51" selection-start-column="59" selection-end-line="51" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/controller/DormController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/controller/XueShengGuanLiController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bishe-dorm-teacher-8082/src/main/java/com/hp/bishe/controller/QinShiTiaoHuanController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
@@ -1051,13 +953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/templates/xueShengQianChu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="439" column="46" selection-start-line="439" selection-start-column="35" selection-end-line="439" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/static/css/qianchujilu.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
@@ -1105,13 +1000,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/static/js/QueQin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/static/js/qianchujilu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1156,10 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-          <folding>
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1170,16 +1054,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/java/com/hp/bishe/utils/TimerTaskUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/java/com/hp/bishe/utils/TimerTaskUtil.java" />
     <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -1191,10 +1066,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding>
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1223,11 +1094,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="427">
           <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1238,30 +1104,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/java/com/hp/bishe/utils/TimerUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/java/com/hp/bishe/utils/TimerUtil.java" />
     <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/java/com/hp/bishe/utils/SessionUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/java/com/hp/bishe/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
+        <state relative-caret-position="163">
           <caret line="54" column="22" lean-forward="true" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/static/js/xueshengguanli.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/templates/xueShengQinShiTiaoHuan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="492" column="22" selection-start-line="492" selection-start-column="22" selection-end-line="492" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/templates/xueShengQianChu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="493" column="22" selection-start-line="493" selection-start-column="22" selection-end-line="493" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="83" column="9" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bishe-dorm-student-8081/src/main/java/com/hp/bishe/service/WeiXiuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bishe-dorm-student-8081/src/main/java/com/hp/bishe/controller/WeiXiuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bishe-dorm-student-8081/src/main/resources/mybatis/mapper/WeiXiuMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="10" column="76" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bishe-dorm-api/src/main/java/com/hp/bishe/bean/WeiXiu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bishe-dorm-student-8081/src/main/java/com/hp/bishe/service/Impl/WeiXiuServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#729#730#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/static/js/QueQin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/static/js/queqinjilu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="108" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bishe-dorm-consumer-80/src/main/resources/static/js/weixiujilu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
         </state>
       </provider>
     </entry>
