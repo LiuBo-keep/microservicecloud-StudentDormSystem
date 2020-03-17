@@ -33,7 +33,7 @@ function formatJsonToSeries(result){
             "<td>"+jsodata[i].status+"</td>"+
             "<td>"+jsodata[i].cost+"</td>"+
             "<td>"+jsodata[i].phone+"</td>"+
-            "<td>"+new Date(jsodata[i].time).format("yyyy-MM-dd")+"</td>"+
+            "<td>"+new Date(jsodata[i].create_time).format("yyyy-MM-dd")+"</td>"+
             "</tr>"
     }
     weixiutable.innerHTML=ta;

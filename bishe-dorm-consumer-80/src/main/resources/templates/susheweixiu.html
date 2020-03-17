@@ -171,8 +171,8 @@
             height: 43px;
         }
         .ind {
-            width: 1142px;
-            height: 526px;
+            width: 1278px;
+            height: 591px;
             float: left;
             background: url("../static/pic/3.jpg") no-repeat center top;
             background-size: 1278px 591px;
@@ -187,8 +187,8 @@
             left: 373px;
         }
         .teo{
-            width: 1142px;
-            height: 526px;
+            width: 1278px;
+            height: 591px;
             float: left;
             background: url("../static/pic/4.jpg") no-repeat center top;
             background-size: 1278px 591px;
@@ -227,7 +227,7 @@
                     <div class="form-group">
                         <span class="one">新密码</span>
                         <div class="col-sm-10">
-                            <input type="text" name="newPassword1" class="form-control" id="    inputPassword3"
+                            <input type="text" name="newPassword1" class="form-control" id="inputPassword3"
                                    placeholder="Password"/>
                         </div>
                     </div>
@@ -403,7 +403,7 @@
                 </div>
                 <div class="pull-left info">
                     <p th:text="${session.user.username}"></p>
-                    <div th:if="${session.Type==0}" th:text="${session.Student.sn}"></div>
+                    <div th:if="${session.Type==0}" th:text="${session.user.sn}"></div>
                 </div>
             </div>
 
@@ -436,10 +436,6 @@
                     </a>
                 </li>
                 <li th:if="${session.Type}==1">
-                    <a th:href="@{/susheweixiu}"><i class="glyphicon glyphicon-calendar"></i> <span>宿舍维修</span>
-                    </a>
-                </li>
-                <li th:if="${session.Type}==1">
                     <a th:href="@{/qianChuJiLu}"><i class="glyphicon glyphicon-calendar"></i> <span>迁出记录</span>
                     </a>
                 </li>
@@ -449,7 +445,7 @@
                 </li>
                 <!--<li th:if="${session.Type}==0" class="treeview">-->
                 <li th:if="${session.Type}==0">
-                    <a th:href="@{/gerenxinxiguanli}"><i class="glyphicon glyphicon-user"></i> <span>个人信息管理</span>
+                    <a th:href="@{/geRenXinxiGuanLi}"><i class="glyphicon glyphicon-user"></i> <span>个人信息管理</span>
                     </a>
                 </li>
                 <li th:if="${session.Type}==0">
@@ -478,12 +474,7 @@
 
     <div class="content-wrapper">
         <section class="content-header">
-            <div th:if="${session.Type}==0" class="ind">
-                <span>欢迎高校学生登录</span>
-            </div>
-            <div th:if="${session.Type}==1" class="teo">
-                <span>欢迎系统管理员登录</span>
-            </div>
+            学生入住登记
         </section>
 
         <section class="content container-fluid">
@@ -564,7 +555,7 @@
 </div>
 <script src="../static/jquery/jquery-1.11.1.min.js"></script>
 <script src="../static/bootstrop/js/bootstrap.js"></script>
-<script src="../static/js/index.js"></script>
+<script src="../static/js/teacher_xiugai.js"></script>
 <script src="../static/bootstrop/js/adminlte.min.js"></script>
 </body>
 </html>
