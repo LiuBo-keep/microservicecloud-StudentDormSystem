@@ -20,20 +20,22 @@ public class DormWeiXiuController {
     private DormWeiXiuService dormWeiXiuService;
 
     //查询所以要维修的记录
-    @GetMapping("/list")
+    @PostMapping("/list")
     public JsonResult ListWeiXiu(
-             WeiXiuVo weiXiuVo
+            @RequestBody WeiXiuVo weiXiuVo
             ){
+        log.info("获取所以维修记录："+weiXiuVo.toString());
         PageObject<WeiXiu> pageObject=dormWeiXiuService.getAll(weiXiuVo);
         return new JsonResult(1,pageObject);
     }
 
     //报修
-    @PostMapping("/update/{id}")
+    @PostMapping("/update")
     public JsonResult updateWeixiu(
-            @PathVariable("id") String id
+            @RequestBody WeiXiu weiXiu
     ){
-        dormWeiXiuService.updateWeixiu(id);
+        dormWeiXiuService.updateWeixiu(weiXiu);
+        log.info("报修："+weiXiu.toString());
         return new JsonResult(1,"报修成功！");
     }
 }

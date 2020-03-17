@@ -46,12 +46,9 @@ public class DormWeiXiuServiceImpl implements DormWeiXiuService
     }
 
     @Override
-    public void updateWeixiu(String id) {
-        String xuehao=id.substring(0,9);
-        String cort=id.substring(10);
-        WeiXiu weiXiu=new WeiXiu();
-        weiXiu.setSn(xuehao);
-        weiXiu.setCost(cort);
-        dormWeiXiuDao.updateWeixiu(weiXiu);
+    public Integer updateWeixiu(WeiXiu weiXiu) {
+        return dormWeiXiuDao.updateWeixiu(weiXiu);
     }
+
+
 }

@@ -10,5 +10,5 @@ public interface DormWeiXiuService {
     public PageObject<WeiXiu> getAll(WeiXiuVo weiXiuVo);
 
     //报修
-    public void updateWeixiu(String id);
+    public Integer updateWeixiu(WeiXiu weiXiu);
 }

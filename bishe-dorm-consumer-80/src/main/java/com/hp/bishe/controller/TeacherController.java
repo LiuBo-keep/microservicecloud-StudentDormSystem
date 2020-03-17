@@ -1,14 +1,12 @@
 package com.hp.bishe.controller;
 
 import com.hp.bishe.Utils.JsonResult;
-import com.hp.bishe.bean.Admin;
-import com.hp.bishe.bean.Dorm;
-import com.hp.bishe.bean.QueQin;
-import com.hp.bishe.bean.Student;
+import com.hp.bishe.bean.*;
 import com.hp.bishe.service.Teacher_PicService;
 import com.hp.bishe.vo.DormVo;
 import com.hp.bishe.vo.PasswordVo;
 import com.hp.bishe.vo.StudentInfo;
+import com.hp.bishe.vo.WeiXiuVo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -152,6 +150,25 @@ public class TeacherController {
         return restTemplate.postForObject(REST_URL_PREFIX_Teacher+"/teacher/tiao",student,JsonResult.class);
     }
 
+
+    /**
+     * 维修报修
+     */
+
+    //查询所有记录
+    @RequestMapping("/list")
+    public JsonResult ListWeiXiu(
+            WeiXiuVo weiXiuVo
+    ){
+        return restTemplate.postForObject(REST_URL_PREFIX_Teacher+"/teacher/list",weiXiuVo,JsonResult.class);
+    }
+    //报修
+    @RequestMapping("/update")
+    public JsonResult updateWeixiu(
+            WeiXiu weiXiu
+    ){
+        return restTemplate.postForObject(REST_URL_PREFIX_Teacher+"/teacher/update",weiXiu,JsonResult.class);
+    }
     /**
      * 学生迁出登记
      */

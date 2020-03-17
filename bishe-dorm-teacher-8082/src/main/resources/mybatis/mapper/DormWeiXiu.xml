@@ -28,6 +28,6 @@
 
     <!--报修-->
     <update id="updateWeixiu" parameterType="com.hp.bishe.bean.WeiXiu">
-        update weixiu set cost=#{cost} where sn=#{sn}
+        update weixiu set cost=#{cost} where sn=#{sn} and create_time=#{create_time}
     </update>
 </mapper>
