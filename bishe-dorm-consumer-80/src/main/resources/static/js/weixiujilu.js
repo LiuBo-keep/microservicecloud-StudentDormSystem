@@ -91,7 +91,8 @@ Date.prototype.format = function(fmt) {
     }
     return fmt;
 }
-/*修改密码*/
+/*
+/!*修改密码*!/
     function mian() {
         var elem1 = document.getElementById("foot");
         var elem2 = document.getElementById("eyea");
@@ -107,7 +108,7 @@ function md() {
     elem2.className = "bacl hide"
 }
 
-/*上传头像*/
+/!*上传头像*!/
 function avatar() {
     var elem1 = document.getElementById("foot");
     var elem3= document.getElementById("eyeb");
@@ -190,3 +191,4 @@ function xiu(){
 function doUpdate() {
     window.location.href="/dorm";
 }
+*/
