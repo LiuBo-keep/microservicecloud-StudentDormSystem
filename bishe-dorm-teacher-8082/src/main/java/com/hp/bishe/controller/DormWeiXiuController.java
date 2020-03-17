@@ -22,7 +22,7 @@ public class DormWeiXiuController {
     //查询所以要维修的记录
     @GetMapping("/list")
     public JsonResult ListWeiXiu(
-            @RequestBody WeiXiuVo weiXiuVo
+             WeiXiuVo weiXiuVo
             ){
         PageObject<WeiXiu> pageObject=dormWeiXiuService.getAll(weiXiuVo);
         return new JsonResult(1,pageObject);

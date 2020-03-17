@@ -9,7 +9,7 @@
         select count(1) from weixiu
         <where>
             <if test="start!=null">
-                and data between #{start} and #{stop}
+                and create_time between #{start} and #{stop}
             </if>
         </where>
     </select>
@@ -19,10 +19,10 @@
         select * from weixiu
         <where>
             <if test="start!=null">
-                and data between #{start} and #{stop}
+                and create_time between #{start} and #{stop}
             </if>
         </where>
-        order by data
+        order by create_time
         limit #{startRow},#{size}
     </select>
 
