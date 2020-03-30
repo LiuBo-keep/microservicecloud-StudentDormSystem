@@ -29,13 +29,13 @@ function formatJsonToSeries(result){
         var sn=jsodata.items[i].sn;
         var date=new Date(jsodata.items[i].create_time).format("yyyy-MM-dd");
         ta+="<tr>" +
-            "<td>"+jsodata.items[i].sn+"</td>"+
+            "<td>"+sn+"</td>"+
             "<td>"+jsodata.items[i].addre+"</td>"+
             "<td>"+jsodata.items[i].obj+"</td>"+
             "<td>"+jsodata.items[i].phone+"</td>"+
             "<td>"+jsodata.items[i].status+"</td>"+
             "<td>"+new Date(jsodata.items[i].create_time).format("yyyy-MM-dd")+"</td>"+
-            "<td><input onclick='sushewei()' type='button' value='报修' style='width: 80px;position: relative;left: 25px'></td>"+
+            "<td><input onclick='sushewei(\"+sn+\")' type='button' value='报修' style='width: 80px;position: relative;left: 25px'></td>"+
             "</tr>"
     }
     weixiutable.innerHTML=ta;
@@ -94,6 +94,10 @@ Date.prototype.format = function(fmt) {
     return fmt;
 }
 
-function sushewei() {
-    alert("ss")
+function sushewei(msg) {
+    //alert(msg);
+    var sushe=document.getElementById("sushew");
+    var susheww=document.getElementById("susheww");
+    sushe.className="meweixiu hide";
+    susheww.className="susheback ";
 }

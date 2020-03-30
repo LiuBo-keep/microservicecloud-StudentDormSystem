@@ -9,6 +9,6 @@
 
     <select id="StudentLogin" parameterType="String" resultType="com.hp.bishe.bean.Student">
         select id,sn,username,password,sex,clazzId,sushe,bed,photo,status,remark,
-        qianRemark,qianchuDatefrom student where sn=#{username}
+        qianRemark,qianchuDate from student where sn=#{username}
     </select>
 </mapper>

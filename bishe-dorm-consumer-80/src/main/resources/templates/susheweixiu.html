@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../static/bootstrop/dist/css/AdminLTE.min.css"/>
     <link rel="stylesheet" href="../static/bootstrop/dist/css/skins/skin-blue.min.css"/>
     <link rel="stylesheet" href="../static/css/meweixiu.css"/>
+    <link rel="stylesheet" href="../static/css/susheweixiu.css"/>
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic"/>
 
@@ -491,6 +492,10 @@
                     </a>
                 </li>
                 <li th:if="${session.Type}==1">
+                    <a th:href="@{/susheweixiu}"><i class="glyphicon glyphicon-calendar"></i> <span>宿舍维修</span>
+                    </a>
+                </li>
+                <li th:if="${session.Type}==1">
                     <a th:href="@{/qianChuJiLu}"><i class="glyphicon glyphicon-calendar"></i> <span>迁出记录</span>
                     </a>
                 </li>
@@ -529,7 +534,7 @@
 
     <div class="content-wrapper">
         <section class="content-header">
-            <div class="meweixiu" style="position: relative;top: 7px;left: 72px">
+            <div id="sushew" class="meweixiu" style="position: relative;top: 7px;left: 72px">
                 <div class="meweixiu-top">
                     <h3>宿舍维修</h3>
                 </div>
@@ -562,11 +567,55 @@
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section class="content container-fluid">
-
-
+            <div id="susheww" class="susheback hide">
+                <div class="susheweixiu">
+                    <div class="susheweixiu-top">
+                        <h3>学生寝室报修</h3>
+                    </div>
+                    <div class="susheweixiu-nei">
+                        <form>
+                            <table border="0" cellspacing="0">
+                                <tr>
+                                    <td height="30" align="right">学号：</td>
+                                    <td>
+                                        <input style="height: 30px;width: 200px;" type="text" placeholder="学号" name="sn"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="30" align="right">寝室：</td>
+                                    <td>
+                                        <input style="height: 30px;width: 200px;" type="text" placeholder="寝室" name="addre"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="30" align="right">物品：</td>
+                                    <td>
+                                        <input style="height: 30px;width: 200px;" type="text" placeholder="物品" name="obj"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="30" align="right">电话：</td>
+                                    <td>
+                                        <input style="height: 30px;width: 200px;" type="text" placeholder="电话" name="phone"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="30" align="right">费用：</td>
+                                    <td>
+                                        <input style="height: 30px;width: 200px;" type="text" placeholder="费用" name="cost"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" height="40" align="center">
+                                        <input style="height: 30px;width: 90px;position: relative ;left: -20px;" type="button" value="完成"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 

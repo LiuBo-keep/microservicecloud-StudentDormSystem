@@ -162,6 +162,15 @@ public class TeacherController {
     ){
         return restTemplate.postForObject(REST_URL_PREFIX_Teacher+"/teacher/list",weiXiuVo,JsonResult.class);
     }
+
+    //回显
+    @RequestMapping("/weisu")
+    public JsonResult getBySn(
+            @RequestParam("msg") String sn
+    ){
+        System.out.println(sn);
+        return new JsonResult();
+    }
     //报修
     @RequestMapping("/update")
     public JsonResult updateWeixiu(

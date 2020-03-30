@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.susheback {
+    width: 1167px;
+    height: 555px;
+    background: rgba(0, 0, 0, .6);
+    float: left;
+    z-index: 99999;
+    position: relative;
+    left: -15px;
+    top: -15px;
+}
+
+.susheweixiu {
+    width: 694px;
+    height: 423px;
+    float: left;
+    background-color: white;
+    position: relative;
+    top: 62px;
+    left: 221px;
+}
+
+.susheweixiu-top {
+    width: 694px;
+    height: 45px;
+    border-bottom: 1px solid #b2bec3;
+    border-collapse: collapse;
+}
+
+.susheweixiu-top h3 {
+    color: #4d4d4d;
+    position: relative;
+    top: 8px;
+    left: 20px;
+}
+
+.susheweixiu p {
+    color: red;
+    position: relative;
+    top: 9px;
+    left: 216px;
+}
+
+.susheweixiu-nei {
+    width: 460px;
+    height: 392px;
+    position: relative;
+    top: 47px;
+    left: 127px;
+}
+
+.susheweixiu-nei table {
+    height: 268px;
+    width: -webkit-fill-available;
+    font-family: 宋体;
+    font-size: 18px;
+    position: relative;
+    top: 9px;
+    left: -1px;
+}

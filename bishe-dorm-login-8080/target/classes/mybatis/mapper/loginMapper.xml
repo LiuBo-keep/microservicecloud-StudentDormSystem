@@ -4,10 +4,11 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.hp.bishe.dao.LoginDao">
     <select id="AdminLogin" parameterType="String" resultType="com.hp.bishe.bean.Admin">
-        select * from admin where username=#{username}
+        select id,username,password,photo from admin where username=#{username}
     </select>
 
     <select id="StudentLogin" parameterType="String" resultType="com.hp.bishe.bean.Student">
-        select * from student where sn=#{username}
+        select id,sn,username,password,sex,clazzId,sushe,bed,photo,status,remark,
+        qianRemark,qianchuDate from student where sn=#{username}
     </select>
 </mapper>
