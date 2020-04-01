@@ -26,6 +26,11 @@
         limit #{startRow},#{size}
     </select>
 
+    <!--回显-->
+    <select id="getBySn" parameterType="com.hp.bishe.bean.WeiXiu" resultType="com.hp.bishe.bean.WeiXiu">
+        select sn,addre,obj,phone,cost from weixiu where sn=#{sn} and create_time=#{create_time}
+    </select>
+
     <!--报修-->
     <update id="updateWeixiu" parameterType="com.hp.bishe.bean.WeiXiu">
         update weixiu set cost=#{cost} where sn=#{sn} and create_time=#{create_time}

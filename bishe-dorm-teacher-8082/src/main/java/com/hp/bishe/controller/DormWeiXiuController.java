@@ -2,6 +2,7 @@ package com.hp.bishe.controller;
 
 import com.hp.bishe.Utils.JsonResult;
 import com.hp.bishe.Utils.PageObject;
+import com.hp.bishe.bean.Student;
 import com.hp.bishe.bean.WeiXiu;
 import com.hp.bishe.service.DormWeiXiuService;
 import com.hp.bishe.vo.WeiXiuVo;
@@ -27,6 +28,16 @@ public class DormWeiXiuController {
         log.info("获取所以维修记录："+weiXiuVo.toString());
         PageObject<WeiXiu> pageObject=dormWeiXiuService.getAll(weiXiuVo);
         return new JsonResult(1,pageObject);
+    }
+
+    //回显
+    @PostMapping("/getsn")
+    public JsonResult getBySn(
+            @RequestBody WeiXiu weiXiu
+            ){
+        log.info(weiXiu.getSn()+"-----"+weiXiu.getCreate_time());
+        WeiXiu weiXiu1=dormWeiXiuService.getBySn(weiXiu);
+        return new JsonResult(1,weiXiu1);
     }
 
     //报修

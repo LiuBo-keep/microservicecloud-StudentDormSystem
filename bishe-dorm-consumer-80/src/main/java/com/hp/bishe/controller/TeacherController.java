@@ -16,6 +16,9 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpSession;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @RestController
@@ -164,12 +167,20 @@ public class TeacherController {
     }
 
     //回显
-    @RequestMapping("/weisu")
+    @RequestMapping("/getsn")
     public JsonResult getBySn(
-            @RequestParam("msg") String sn
+            @RequestParam("sn") String sn,
+            @RequestParam("date") long data
+
     ){
-        System.out.println(sn);
-        return new JsonResult();
+        System.out.println(sn+"---"+data);
+        Date date=new Date();
+        date.setTime(data);
+        System.out.println(date);
+        WeiXiu weiXiu=new WeiXiu();
+        weiXiu.setSn(sn);
+        weiXiu.setCreate_time(date);
+       return restTemplate.postForObject(REST_URL_PREFIX_Teacher+"/teacher/getsn",weiXiu,JsonResult.class);
     }
     //报修
     @RequestMapping("/update")

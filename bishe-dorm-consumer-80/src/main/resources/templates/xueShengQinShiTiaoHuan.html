@@ -424,10 +424,10 @@
                     <a th:href="@{/suSheGuanLi}"><i class="glyphicon glyphicon-edit"></i> <span>宿舍管理</span>
                     </a>
                 </li>
-                <li th:if="${session.Type}==1">
+                <!--<li th:if="${session.Type}==1">
                     <a th:href="@{/XueShengRuzhuDengJi}"><i class="glyphicon glyphicon-edit"></i> <span>学生入住登记</span>
                     </a>
-                </li>
+                </li>-->
                 <li th:if="${session.Type}==1">
                     <a th:href="@{/xueShengQinShiTiaoHuan}"><i class="glyphicon glyphicon-oil"></i> <span>学生寝室调换</span>
                     </a>
@@ -453,10 +453,10 @@
                     <a th:href="@{/geRenXinxiGuanLi}"><i class="glyphicon glyphicon-user"></i> <span>个人信息管理</span>
                     </a>
                 </li>
-                <li th:if="${session.Type}==0">
+                <!--<li th:if="${session.Type}==0">
                     <a th:href="@{/ruZhuXinXiDengJi}"><i class="glyphicon glyphicon-bookmark"></i> <span>入住信息登记</span>
                     </a>
-                </li>
+                </li>-->
                 <li th:if="${session.Type}==0">
                     <a th:href="@{/queQinJiLu}"><i class="glyphicon glyphicon-calendar"></i> <span>我的缺勤记录</span>
                     </a>

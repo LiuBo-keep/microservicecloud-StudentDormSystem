@@ -1,6 +1,7 @@
 package com.hp.bishe.service.Impl;
 
 import com.hp.bishe.Utils.PageObject;
+import com.hp.bishe.bean.Student;
 import com.hp.bishe.bean.WeiXiu;
 import com.hp.bishe.dao.DormWeiXiuDao;
 import com.hp.bishe.service.DormWeiXiuService;
@@ -48,6 +49,11 @@ public class DormWeiXiuServiceImpl implements DormWeiXiuService
     @Override
     public Integer updateWeixiu(WeiXiu weiXiu) {
         return dormWeiXiuDao.updateWeixiu(weiXiu);
+    }
+
+    @Override
+    public WeiXiu getBySn(WeiXiu weiXiu) {
+        return dormWeiXiuDao.getBySn(weiXiu);
     }
 
 

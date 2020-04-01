@@ -1,5 +1,6 @@
 package com.hp.bishe.dao;
 
+import com.hp.bishe.bean.Student;
 import com.hp.bishe.bean.WeiXiu;
 import com.hp.bishe.vo.WeiXiuVo;
 import org.apache.ibatis.annotations.Mapper;
@@ -15,4 +16,6 @@ public interface DormWeiXiuDao {
     public List<WeiXiu> findByData(WeiXiuVo weiXiuVo);
     //报修
     public Integer updateWeixiu(WeiXiu weiXiu);
+    //回显
+    public WeiXiu getBySn(WeiXiu weiXiu);
 }

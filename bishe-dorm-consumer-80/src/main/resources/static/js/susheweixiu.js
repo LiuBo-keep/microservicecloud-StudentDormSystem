@@ -27,7 +27,8 @@ function formatJsonToSeries(result){
 
     for (var i=0;i<jsodata.items.length;i++){
         var sn=jsodata.items[i].sn;
-        var date=new Date(jsodata.items[i].create_time).format("yyyy-MM-dd");
+        var date=jsodata.items[i].create_time;
+        var sr="---";
         ta+="<tr>" +
             "<td>"+sn+"</td>"+
             "<td>"+jsodata.items[i].addre+"</td>"+
@@ -35,7 +36,7 @@ function formatJsonToSeries(result){
             "<td>"+jsodata.items[i].phone+"</td>"+
             "<td>"+jsodata.items[i].status+"</td>"+
             "<td>"+new Date(jsodata.items[i].create_time).format("yyyy-MM-dd")+"</td>"+
-            "<td><input onclick='sushewei(\"+sn+\")' type='button' value='报修' style='width: 80px;position: relative;left: 25px'></td>"+
+            "<td><input onclick='sushewei("+sn+","+date+")' type='button' value='报修' style='width: 80px;position: relative;left: 25px'></td>"+
             "</tr>"
     }
     weixiutable.innerHTML=ta;
@@ -94,10 +95,52 @@ Date.prototype.format = function(fmt) {
     return fmt;
 }
 
-function sushewei(msg) {
-    //alert(msg);
+function sushewei(msg,data) {
+    // alert(msg);
+    // alert(data);
+    var xml=creatreXMLHttpRequest();
+    console.log(xml);
+    xml.open("POST","/teacher/getsn",true);
+    xml.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+    xml.send('sn='+msg+'&date='+data);
+    xml.onreadystatechange=function(){
+        if(xml.readyState==4&&xml.status==200){
+            //获取服务器的响应内容
+            var text =xml.responseText;
+            var jsn=JSON.parse(text);
+            console.log(jsn);
+            var huixian=document.getElementById("huixian");
+            console.log(huixian);
+            var bsy="<tr>" +
+                "<td height='30px' align='le'>学号：</td>"+
+                "<td>" +
+                "<input style='height: 30px;width: 200px;' type='text' placeholder='' name='sn'>"+
+                "</td>"+
+                "</tr>";
+
+            huixian.innerHTML=bsy;
+        }
+    };
+
     var sushe=document.getElementById("sushew");
     var susheww=document.getElementById("susheww");
     sushe.className="meweixiu hide";
     susheww.className="susheback ";
+}
+
+function creatreXMLHttpRequest() {
+    try{
+        return new XMLHttpRequest();
+    }catch(e){
+        try{
+            return new ActiveXObject("Msxml2.XMLHTTP");
+        }catch(e){
+            try{
+                return new ActiveXObjectt("Microsoft.XMLHTTP");
+            }catch(e){
+                alert("不知道是什么浏览器");
+                throw e;
+            }
+        }
+    }
 }
