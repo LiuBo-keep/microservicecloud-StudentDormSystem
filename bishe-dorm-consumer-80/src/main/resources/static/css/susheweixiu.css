@@ -54,11 +54,12 @@
 }
 
 .susheweixiu-nei table {
-    height: 268px;
-    width: -webkit-fill-available;
+    height: 262px;
+    /* width: -webkit-fill-available; */
+    width: 300px;
     font-family: 宋体;
     font-size: 18px;
     position: relative;
-    top: 9px;
-    left: -1px;
+    top: -14px;
+    left: 65px;
 }

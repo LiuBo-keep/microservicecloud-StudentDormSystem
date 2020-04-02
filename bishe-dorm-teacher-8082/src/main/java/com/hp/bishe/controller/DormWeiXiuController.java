@@ -45,6 +45,7 @@ public class DormWeiXiuController {
     public JsonResult updateWeixiu(
             @RequestBody WeiXiu weiXiu
     ){
+        System.out.println(weiXiu.getStatus());
         dormWeiXiuService.updateWeixiu(weiXiu);
         log.info("报修："+weiXiu.toString());
         return new JsonResult(1,"报修成功！");

@@ -111,12 +111,47 @@ function sushewei(msg,data) {
             console.log(jsn);
             var huixian=document.getElementById("huixian");
             console.log(huixian);
+            var sn=jsn.data.sn;
+            var addre=jsn.data.addre;
+            var obj=jsn.data.obj;
+            var phone=jsn.data.phone;
+            var cost=jsn.data.cost;
             var bsy="<tr>" +
-                "<td height='30px' align='le'>学号：</td>"+
+                "<td height='30px' align='right'>学号：</td>"+
                 "<td>" +
-                "<input style='height: 30px;width: 200px;' type='text' placeholder='' name='sn'>"+
+                "<input style='height: 30px;width: 200px;' type='text' placeholder="+sn+" name='sn'>"+
+                "</td>"+
+                "</tr>"+
+                "<tr>" +
+                "<td height='30px' align='right'>寝室：</td>"+
+                "<td>" +
+                "<input style='height: 30px;width: 200px;' type='text' placeholder="+addre+" name='addre'>"+
+                "</td>"+
+                "</tr>"+
+                "<tr>" +
+                "<td height='30px' align='right'>物品：</td>"+
+                "<td>" +
+                "<input style='height: 30px;width: 200px;' type='text' placeholder="+obj+" name='obj'>"+
+                "</td>"+
+                "</tr>"+
+                "<tr>" +
+                "<td height='30px' align='right'>电话：</td>"+
+                "<td>" +
+                "<input style='height: 30px;width: 200px;' type='text' placeholder="+phone+" name='phone'>"+
+                "</td>"+
+                "</tr>"+
+                "<tr>" +
+                "<td height='30' align='right'>费用：</td>"+
+                "<td>" +
+                "<input id='weicost' style='height: 30px;width: 200px;' type='text' placeholder="+cost+"  name='cost'>"+
+                "</td>"+
+                "</tr>"+
+                "<tr>" +
+                "<td colspan='2' height='40' align='center'>" +
+                "<input onclick='weibtn("+sn+","+data+")' style='height: 30px;width: 90px;position: relative;left: -20px;' type='button' value='完成'>"+
                 "</td>"+
                 "</tr>";
+
 
             huixian.innerHTML=bsy;
         }
@@ -128,6 +163,29 @@ function sushewei(msg,data) {
     susheww.className="susheback ";
 }
 
+function weibtn(sn,data) {
+    var cost=document.getElementById("weicost");
+    console.log(cost);
+   // alert(cost.value);
+    var val=cost.value;
+    var xmls = creatreXMLHttpRequest();
+    xmls.open("POST", "/teacher/update", true);
+    xmls.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xmls.send('sn=' + sn + '&date=' + data+'&cost='+val);
+    xmls.onreadystatechange = function () {
+        if (xmls.readyState == 4 && xmls.status == 200) {
+            //获取服务器的响应内容
+            var text = xmls.responseText;
+            var jsn = JSON.parse(text);
+            console.log(jsn);
+            alert(jsn.message);
+            var sushe=document.getElementById("sushew");
+            var susheww=document.getElementById("susheww");
+            sushe.className="meweixiu";
+            susheww.className="susheback hide";
+        }
+    }
+}
 function creatreXMLHttpRequest() {
     try{
         return new XMLHttpRequest();

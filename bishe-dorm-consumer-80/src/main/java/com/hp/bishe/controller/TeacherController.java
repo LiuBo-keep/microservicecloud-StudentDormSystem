@@ -185,8 +185,18 @@ public class TeacherController {
     //报修
     @RequestMapping("/update")
     public JsonResult updateWeixiu(
-            WeiXiu weiXiu
+            @RequestParam("sn") String sn,
+            @RequestParam("date") long data,
+            @RequestParam("cost") String cost
     ){
+        System.out.println(sn+"---"+data+"---"+cost);
+        Date date=new Date(data);
+        WeiXiu weiXiu=new WeiXiu();
+        weiXiu.setSn(sn);
+        weiXiu.setCreate_time(date);
+        weiXiu.setCost(cost);
+        weiXiu.setStatus("已维修");
+        System.out.println("报修"+weiXiu.toString());
         return restTemplate.postForObject(REST_URL_PREFIX_Teacher+"/teacher/update",weiXiu,JsonResult.class);
     }
     /**
